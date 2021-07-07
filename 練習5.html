@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            width: 600px;
+            height: 600px;
+
+            /* justify-content: space-evenly; */
+            /* flex-direction: row; */
+            /* align-items: center; */
+            /* align-items: flex-start; */
+            /* align-content: center; */
+        }
+        .item{
+            /* flex-shrink: 0; */
+            width: 600px;
+            height: 100px;
+            margin:  0px;
+            font-size: 50px ;
+            
+        }
+        .item:nth-child(1){
+        /* order: 5; */
+        flex-grow: 1;
+        }
+        .item:nth-child(2){
+        /* order: 1; */
+        flex-grow: 1;
+        }
+        .item:nth-child(3){
+        /* order: -2; */
+        flex-grow: 1;
+        }
+        .item:nth-child(7){
+        /* order: 1; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box" style="content;img src="<img src="https://fakeimg.pl/200x300/red">
+        <div class="item">全方位<br>網頁設計前後實戰</div>
+            
+        <div class="item">全方位訓練營</div>
+        <div class="item">課程包含Git/HTML/JavaScript/Rudy on Rails</div>
+    </div>
+</body>
+</html>

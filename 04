@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+     <style>
+         .box{
+            width: 500px;
+            morgin
+         }
+     </style>
+<body>
+    <form>
+        <div>
+            <label for="user_name">姓名</label>
+            <input type="text" id="user_name">
+        </div>
+        <label>
+            姓名
+            <input type="text">
+        </label>
+        <div>
+            <label>
+                男
+                <input type="radio" name="sex">
+            </label>
+            <label>
+                女
+                <input type="radio" name="sex">
+            </label>
+        </div>
+        <div>
+            電話<input type="tel">
+        </div>
+        <div>
+            密碼<input type="password">
+        </div>
+        <div>
+            email<input type="email">
+        </div>
+        <div>
+            網址<input type="url">
+        </div>
+        <div>
+            日期<input type="date">
+        </div>
+        <div>
+            時間<input type="time" min="10">
+        </div>
+        <div>
+            年齡<input type="number" min="5" max="100">
+        </div>
+        <div>
+            區間<input type="range">
+        </div>
+        <div>
+            搜尋<input type="search">
+        </div>
+        <div>
+            色彩<input type="color">
+        </div>
+        <div>
+            檔案<input type="file">
+        </div>
+        <div>
+            <input type="submit" value="送出">
+            <input type="reset">
+            <input type="button" value="button">
+            <button>button</button>
+        </div>
+        <select multiple>
+            <option>請選擇</option>
+            <option>台北市</option>
+            <option>桃園市</option>
+        </select>
+        <div class="chk">
+            <label>
+                <input type="checkbox" name="sex">
+                釣魚
+            </label>
+            <label>
+                <input type="checkbox" name="sex">
+                跑步
+            </label>
+        </div>
+    </form>
+</body>
+</html>

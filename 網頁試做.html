@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *.{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .table{
+            padding: 5px;
+            border: 6px chocolate;
+            margin: 2px;
+        }
+        .box{
+            padding: 5px;
+            width: 730px;
+			margin: auto;
+            display: flex;
+            flex-wrap: row-reverse;
+            border: 1px solid #f00;
+        }
+        .pic{
+            width: 100%;
+            height: 100%;
+            /* margin: auto; */
+            vertical-align: middle;
+            object-fit: cover;
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+        }
+        .pic.nth-child(even){
+            display: block;
+            flex-wrap: wrap;
+        }
+        .txt{
+            width: 100%;
+            margin: auto;
+            justify-content: center;
+		}
+    </style>
+</head>
+
+<body>
+    <img src="https://fakeimg.pl/300x200/?text=img">
+<div class="table">
+    <div class="box">
+        <p class="pic"><img src="https://fakeimg.pl/350x200/?text=img"></p>
+        <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quasi tempore quas minus animi aliquam a, consequatur recusandae facilis atque numquam consectetur at veniam iure. Ad, perspiciatis officiis! Similique.</p>
+    </div>
+    <div class="box">
+        <p class="pic"><img src="https://fakeimg.pl/350x200/?text=img"></p>
+        <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quasi tempore quas minus animi aliquam a, consequatur recusandae facilis atque numquam consectetur at veniam iure. Ad, perspiciatis officiis! Similique.</p>
+    </div> 
+    <div class="box">
+        <p class="pic"><img src="https://fakeimg.pl/350x200/?text=img"></p>
+        <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quasi tempore quas minus animi aliquam a, consequatur recusandae facilis atque numquam consectetur at veniam iure. Ad, perspiciatis officiis! Similique.</p>
+    </div>
+</div>     
+</body>
+</html>

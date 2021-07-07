@@ -1,0 +1,75 @@
+.top{
+    width: 100%;
+    display: flex;
+    font-size: 28px;
+    justify-content: center;
+    align-items: center;
+}
+.none{
+    flex-grow: 1;
+}
+.top a{
+    margin: 10px;
+    border: 1px   solid rgb(80, 255, 89) ;
+    text-decoration:none;
+    color: black;
+}
+.tpic{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px   solid rgb(80, 255, 89) ;
+    background-image: url("https://picsum.photos/id/237/1903/528");
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    }
+.ttpic{
+    justify-content: center;
+    display: flex;
+    padding: 24px 20px;
+    margin: 100px;
+    width: 1592px;
+    height: 316px;
+    border: 1px   solid rgb(80, 255, 89) ;
+}
+.txt{
+    width: 984px;
+    height: 60px;
+    font-size:60px;
+    border: 1px   solid rgb(80, 255, 89) ;
+    }
+.ttxt{
+    width: 984px;
+    height: 28px;
+    font-size:28px;
+}    
+.ttt{
+    border: 1px   solid rgb(80, 255, 89) ;
+    border-left: 600px solid #FFF;
+    border-right: 1960px solid #FFF;
+    border-bottom: 0px solid transparent;
+    border-top: 120px solid transparent;
+    position: absolute ;
+    bottom: 0px;
+    }
+.pic{
+    padding: 80px 20px 0px 20px;
+    margin: 0px 184px;
+    width:984px;
+    height:228px;
+    border: 1px   solid rgb(80, 255, 89) ;
+}
+.pic a{
+    width: 96px;
+    height: 28px;
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: #f00;
+    text-decoration:none;
+    color:#fff;
+    transition: all 0.5s 0s ease;
+}
+.pic a:hover{
+    background-color: #c00;
+}
