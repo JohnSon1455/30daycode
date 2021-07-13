@@ -1,0 +1,281 @@
+*, html {
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+.container {
+	position: relative;
+}
+
+/* 優勢 */
+.advantage {
+	width: 1004px;
+	height: 800px;
+	margin: 0 auto;
+	position: relative;
+	/*background-color: lightyellow;*/
+	/*border: 1px solid lightcoral;*/
+}
+
+
+/*.advantage:nth-of-type(odd){
+	border: 2px solid #ab0;
+}
+
+.advantage:nth-of-type(even){
+	border: 2px solid #0bc;
+	}*/
+
+
+	.car-img {
+		width: 650px;
+		height: 400px;
+		position: relative;
+		top: 20%;
+		z-index: 1;
+		opacity: 0;
+		transition: all 1s;
+		/*background-color: #afb;*/
+	}
+
+	.advantage:nth-of-type(odd) .car-img{
+		left:  20%;
+	}
+
+	.advantage:nth-of-type(even) .car-img{
+		/*right: 15%;*/
+		left: 10%;
+	}
+
+	.advantage:hover .car-img{
+		opacity: 1;
+		left:  15%;
+	}
+
+
+	.car-img img {
+		width: 100%;
+
+	}
+
+	.youtube-logo {
+		width: 70px;
+		height: 40px;
+		position: absolute;
+		display: flex;
+		align-items: center;
+		/*background-color: #bae;*/
+		bottom: 50%;
+
+	}
+
+	.advantage:nth-of-type(odd) .youtube-logo{
+		/*border: 2px solid #ab0;*/
+		right: -3%;
+	}
+
+	.advantage:nth-of-type(even) .youtube-logo{
+		/*border: 2px solid #0bc;*/
+		left: -3%;
+	}
+
+	.youtube-logo img {
+		width: 100%;
+	}
+
+	/* 自己原本畫的 youtube 三角形 TODO */
+/*
+.triangle {
+	margin: auto;
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 30px solid #aff;
+	overflow: hidden;
+
+	}*/
+
+
+	.background-grid {
+		background-color: #F1F1F1;
+		width: 400px;
+		height: 300px;
+		position: absolute;
+		right: 6%;
+		top: 5%;
+		z-index: 0;
+		opacity: 0;
+		transition: all 1s;
+	}
+
+	.advantage:hover .background-grid{
+		opacity: 1
+	}
+
+	.advantage:nth-of-type(odd):hover .background-grid{
+		right:  12%;
+	}
+
+	.advantage:nth-of-type(even) .background-grid{
+		top: 0;
+	}
+
+	.advantage:nth-of-type(even):hover .background-grid{
+		top: 5%;
+	}
+
+	.feature {
+		color: #fff;
+		width: 320px;
+		height: 400px;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		background-color: #BB0404;
+		position: absolute;
+		top: 1%;
+		z-index: 2;
+		opacity: 0;
+		transition: all 1s;
+	}
+
+
+	.advantage:hover .feature{
+		opacity: 1
+	}
+
+	.advantage:nth-of-type(odd) .feature{
+		left: -5%;
+	}
+
+	.advantage:nth-of-type(odd):hover .feature{
+		left: 1%;
+	}
+
+
+	.advantage:nth-of-type(even) .feature{
+		right: -5%;
+	}
+
+	.advantage:nth-of-type(even):hover .feature{
+		right: 1%;
+	}
+
+
+
+	.feature h2 {
+		font-size: 50px;
+		text-align: center;
+		line-height:100px;
+		margin: auto;
+	}
+
+
+	.feature h2:nth-of-type(1) {
+		font-size: 120px;
+		writing-mode: vertical-lr;
+		background-color: #BB0404;
+		flex-grow: 1;
+	}
+
+	.feature h2:nth-of-type(2) {
+		flex-grow: 3;
+		background-color: #BB0404;
+
+	}
+
+
+	.feature div {
+		line-height: 1.6;
+		padding: 20px;
+		background-color: #000;
+		font-size: 18px;
+
+	}
+
+	.feature h3 {
+		font-weight: bold;
+		font-size: 24px;
+		margin: 10px 5px;
+	}
+
+	.innovation {
+		background-color: #F1F1F1;
+		position: relative;
+		width: 600px;
+		color: #BB0404;
+		padding: 10px;
+		bottom: -15%;
+		z-index: 2;
+		opacity: 0;
+		transition: all 1s;
+	}
+
+	.advantage:nth-of-type(odd) .innovation{
+		left: 5%;
+
+	}
+
+	.advantage:nth-of-type(even) .innovation{
+		left: 25%;
+	}
+
+	.advantage:hover .innovation{
+		bottom: -10%;
+		opacity: 1
+	}
+
+
+	.innovation-title {
+		font-weight: bold;
+		padding: 10px;
+		display: flex;
+		align-items: center;
+		/*background-color: #dad;*/
+	}
+
+	.innovation-title:after {
+		content: " ";
+		width: 0px;
+		height: 1px ;
+		background: #BB0404;
+		flex-grow: 1;
+	}
+
+
+	.highlight {
+		font-weight: bold;
+		padding: 0 15px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: flex-start;
+
+	}
+
+	.highlight h4{
+		margin: 5px 1px;
+		padding: 5px;
+		color: #fff;
+		background-color: #000;
+	}
+
+	.highlight p{
+		color:  #000;	
+		line-height: 1;
+		font-size: 14px;
+		/*margin: 1px 5px;*/
+	}
+
+	.highlight h4:after{
+		content: "";
+	}
+
+	.highlight p:before{
+		content: "· ";
+		font-size: 25px;
+		margin-left: 15px;
+	}
+

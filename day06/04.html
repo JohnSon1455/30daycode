@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 700px;
+			height: 500px;
+			background-color: #ccc;
+/*			background-image: url(video-icon.png);
+			background-repeat: no-repeat;
+			background-size: 100px 400px;*/
+			background-image: linear-gradient(0deg, red, red);
+			background-repeat: no-repeat;
+			background-size: 100px 10px;
+		}
+		/*p{
+			padding-left: 1em;
+			background-color: #ccc;
+			background-image: linear-gradient(0deg, red, red);
+			background-repeat: no-repeat;
+			background-size: 10px 10px;
+			background-position: 4px 4px;
+		}*/
+
+		/*------------------------------------------*/
+
+		p{
+			background: #ccc;
+			padding-left: 1em;
+			position: relative;
+		}
+		p:before{
+			content: '';
+			position: absolute;
+			width: 5px;
+			height: 5px;
+			background-color: #f00;
+			left: 5px;
+			top: 5px;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+
+
+	<div class="box"></div>
+
+
+
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam vel atque dicta, minima doloremque asperiores odio dolorem molestiae repellat fugit, enim. Voluptatem repudiandae libero delectus, expedita, ipsam inventore tenetur?cta, minima doloremque asperiores odio dolorem molestiae repellat fugit, enim. Voluptatem repudiandae libero delectus, expedita, ipsam inventore tenetur?cta, minima doloremque asperiores odio dolorem molestiae repellat fugit, enim. Voluptatem repudiandae libero delectus, expedita, ipsam inventore tenetur?</p>
+	
+</body>
+</html>

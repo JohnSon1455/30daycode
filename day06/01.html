@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.group{
+			width: 960px;
+			border: 1px solid red;
+			margin: auto;
+		}
+		.item{
+			padding: 40px 0;
+		}
+		.item .item-title{
+			width: 320px;
+			color: #fff;
+			position: relative;
+		}
+		.item:nth-child(even) .item-title{
+			margin-left: auto;
+		}
+		.item .item-title h2{
+			background-color: #f00;
+			font-size: 50px;
+		}
+		.item .item-title .txt{
+			background-color: #000;
+			padding: 20px;
+			position: absolute;
+		}
+
+		.item .mv{
+			width: 640px;
+			margin-left: 200px;
+			/*border:1px solid red;*/
+		}
+		.item:nth-child(even) .mv{
+			margin-left: 100px;
+		}
+		.item .mv > a{
+			display: flex;
+			/*flex-wrap: wrap;*/
+			align-items: center;
+		}
+		.item:nth-child(even) .mv > a{
+			flex-direction: row-reverse;
+		}
+		.item .mv .cover{
+			width: 630px;
+			display: block;
+			margin-right: -70px;
+		}
+		.item:nth-child(even) .mv .cover{
+			margin-right: 0;
+			margin-left: -70px;
+		}
+		.item .mv .cover img{
+			width: 100%;
+			vertical-align: middle;
+		}
+		.item .mv .btn-play{
+			width: 80px;
+			display: block;
+		}
+		.item .mv .btn-play img{
+			width: 100%;
+			vertical-align: middle;
+		}
+
+		.item .main-txt{
+			width: 620px;
+			padding: 10px;
+			background-color: #aaa;
+			margin-left: 100px;
+			margin-top: -1em;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		.item:nth-child(even) .main-txt{
+			margin-left: 200px;
+		}
+		.item .main-txt h3{
+			background-color: #000;
+			color: #fff;
+			padding: 5px;
+			margin-top: .5em;
+		}
+		.item .main-txt p{
+			padding-left: 1em;
+			text-indent: -1em;
+		}
+		.item .main-txt p:before{
+			content: '●';
+			transform: scale(.3);
+			display: inline-block;
+			margin-right: 5px;
+			text-indent: 0em;
+			color: #f00;
+		}
+		.item .main-txt .slg{
+			color: #f00;
+			order: -1;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	
+
+	<section class="group">
+		<div class="item">
+			<div class="item-title">
+				<h2>
+					<span>01</span>
+					<span>操控樂趣</span>
+				</h2>
+				<div class="txt">
+					<h3>人人滿意的駕駛體驗</h3>
+					<p>下載次數常委會夫妻居然銷售獨特他就站在玩家新型公里認證意義，點此經濟一邊化學一流減肥，較大什麼事父母陝西在線內容，今天。</p>
+				</div>
+			</div>
+			<div class="mv">
+				<a href="#">
+					<span class="cover">
+						<img src="https://fakeimg.pl/350x200/?text=img">
+					</span>
+					<span class="btn-play">
+						<img src="video-icon.png" alt="">
+					</span>
+				</a>
+			</div>
+			<div class="main-txt">
+				<h3>低重心設計</h3>
+				<p>放心遭遇能在簡歷總是培訓貫徹貼圖供應商所。</p>
+				<h3>車體剛性強化</h3>
+				<p>給予不得不美元電影搜索引擎結果欣賞到達考察協會供，國人革命付款為什麼今年據說看，簡單態度每年變化問道感情解放以為，觀點。</p>
+				<h3>四輪獨立懸吊</h3>
+				<p>試題網遊業績日記版面階段成了預防全部功，會計任何人山西姑娘色情清晰大家讓他委託。</p>
+				<div class="slg">因為我們做了這些革新</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-title">
+				<h2>
+					<span>01</span>
+					<span>操控樂趣</span>
+				</h2>
+				<div class="txt">
+					<h3>人人滿意的駕駛體驗</h3>
+					<p>下載次數常委會夫妻居然銷售獨特他就站在玩家新型公里認證意義，點此經濟一邊化學一流減肥，較大什麼事父母陝西在線內容，今天。</p>
+				</div>
+			</div>
+			<div class="mv">
+				<a href="#">
+					<span class="cover">
+						<img src="https://fakeimg.pl/350x200/?text=img">
+					</span>
+					<span class="btn-play">
+						<img src="video-icon.png" alt="">
+					</span>
+				</a>
+			</div>
+			<div class="main-txt">
+				<h3>低重心設計</h3>
+				<p>放心遭遇能在簡歷總是培訓貫徹貼圖供應商所。</p>
+				<h3>車體剛性強化</h3>
+				<p>給予不得不美元電影搜索引擎結果欣賞到達考察協會供，國人革命付款為什麼今年據說看，簡單態度每年變化問道感情解放以為，觀點。</p>
+				<h3>四輪獨立懸吊</h3>
+				<p>試題網遊業績日記版面階段成了預防全部功，會計任何人山西姑娘色情清晰大家讓他委託計任何人山西姑娘色情清晰大家讓他委託計任何人山西姑娘色情清晰大家讓他委託計任何人山西姑娘色情清晰大家讓他委託計任何人山西姑娘色情清晰大家讓他委託。</p>
+				<div class="slg">因為我們做了這些革新</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-title">
+				<h2>
+					<span>01</span>
+					<span>操控樂趣</span>
+				</h2>
+				<div class="txt">
+					<h3>人人滿意的駕駛體驗</h3>
+					<p>下載次數常委會夫妻居然銷售獨特他就站在玩家新型公里認證意義，點此經濟一邊化學一流減肥，較大什麼事父母陝西在線內容，今天。</p>
+				</div>
+			</div>
+			<div class="mv">
+				<a href="#">
+					<span class="cover">
+						<img src="https://fakeimg.pl/350x200/?text=img">
+					</span>
+					<span class="btn-play">
+						<img src="video-icon.png" alt="">
+					</span>
+				</a>
+			</div>
+			<div class="main-txt">
+				<h3>低重心設計</h3>
+				<p>放心遭遇能在簡歷總是培訓貫徹貼圖供應商所。</p>
+				<h3>車體剛性強化</h3>
+				<p>給予不得不美元電影搜索引擎結果欣賞到達考察協會供，國人革命付款為什麼今年據說看，簡單態度每年變化問道感情解放以為，觀點。</p>
+				<h3>四輪獨立懸吊</h3>
+				<p>試題網遊業績日記版面階段成了預防全部功，會計任何人山西姑娘色情清晰大家讓他委託。</p>
+				<div class="slg">因為我們做了這些革新</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-title">
+				<h2>
+					<span>01</span>
+					<span>操控樂趣</span>
+				</h2>
+				<div class="txt">
+					<h3>人人滿意的駕駛體驗</h3>
+					<p>下載次數常委會夫妻居然銷售獨特他就站在玩家新型公里認證意義，點此經濟一邊化學一流減肥，較大什麼事父母陝西在線內容，今天。</p>
+				</div>
+			</div>
+			<div class="mv">
+				<a href="#">
+					<span class="cover">
+						<img src="https://fakeimg.pl/350x200/?text=img">
+					</span>
+					<span class="btn-play">
+						<img src="video-icon.png" alt="">
+					</span>
+				</a>
+			</div>
+			<div class="main-txt">
+				<h3>低重心設計</h3>
+				<p>放心遭遇能在簡歷總是培訓貫徹貼圖供應商所。</p>
+				<h3>車體剛性強化</h3>
+				<p>給予不得不美元電影搜索引擎結果欣賞到達考察協會供，國人革命付款為什麼今年據說看，簡單態度每年變化問道感情解放以為，觀點。</p>
+				<h3>四輪獨立懸吊</h3>
+				<p>試題網遊業績日記版面階段成了預防全部功，會計任何人山西姑娘色情清晰大家讓他委託。</p>
+				<div class="slg">因為我們做了這些革新</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-title">
+				<h2>
+					<span>01</span>
+					<span>操控樂趣</span>
+				</h2>
+				<div class="txt">
+					<h3>人人滿意的駕駛體驗</h3>
+					<p>下載次數常委會夫妻居然銷售獨特他就站在玩家新型公里認證意義，點此經濟一邊化學一流減肥，較大什麼事父母陝西在線內容，今天。</p>
+				</div>
+			</div>
+			<div class="mv">
+				<a href="#">
+					<span class="cover">
+						<img src="https://fakeimg.pl/350x200/?text=img">
+					</span>
+					<span class="btn-play">
+						<img src="video-icon.png" alt="">
+					</span>
+				</a>
+			</div>
+			<div class="main-txt">
+				<h3>低重心設計</h3>
+				<p>放心遭遇能在簡歷總是培訓貫徹貼圖供應商所。</p>
+				<h3>車體剛性強化</h3>
+				<p>給予不得不美元電影搜索引擎結果欣賞到達考察協會供，國人革命付款為什麼今年據說看，簡單態度每年變化問道感情解放以為，觀點。</p>
+				<h3>四輪獨立懸吊</h3>
+				<p>試題網遊業績日記版面階段成了預防全部功，會計任何人山西姑娘色情清晰大家讓他委託。</p>
+				<div class="slg">因為我們做了這些革新</div>
+			</div>
+		</div>
+	</section>
+
+
+
+</body>
+</html>

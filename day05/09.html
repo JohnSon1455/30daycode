@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.item{
+			width: 300px;
+			margin: 30px;
+			border:1px solid red;
+			position: relative;
+		}
+		.item img{
+			width: 100%;
+		}
+		.label{
+			background-color: #f00;
+			padding: 10px 20px;
+			color: #fff;
+			position: absolute;
+			top: 10px;
+			left: -10px;
+		}
+		.label:after{
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 0;
+			height: 0;
+			border-top: 6px solid #600;
+			border-left: 9px solid transparent;
+		}
+		.flag{
+			background-color: #ee0;
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 10px 0;
+			width: 40px;
+			text-align: center;
+		}
+		.flag:after{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 100%;
+			width: 0;
+			height: 0;
+			border-bottom: 10px solid transparent;
+			border-left: 20px solid #ee0;
+			border-right: 20px solid #ee0;
+		}
+		.item .txt{
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+
+
+	<div class="item">
+		<div class="label">
+			五倍嚴選
+		</div>
+		<div class="flag">8折</div>
+		<img src="https://fakeimg.pl/350x250/?text=img">
+		<div class="txt">
+			<h3>title</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Molestias, recusandae?</p>
+		</div>
+	</div>
+
+
+	
+</body>
+</html>

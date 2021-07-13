@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .voo{
+            display: flex;
+            border: 10px solid red;
+        }
+        .flag{
+            width: 50px;
+            position: relative;
+            top: 0px;
+            right:-550px;
+         }
+        .txt{
+            padding: 30px 0;
+            text-align: center;
+            background-color: #fa0;
+            color: #fff;
+        }
+        .flag::after{
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: 25px solid #fa0;
+            border-right: 25px solid #fa0;
+            border-bottom: 20px solid transparent;
+        }
+        .pic{
+            width: 600px;
+            height: 400px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="voo">  <div class="pic"><img src="https://picsum.photos/id/660/600/400" alt=""></div>
+    <div class="flag">
+        <div class="txt">7折</div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magni incidunt autem repellendus inventore quam quos nobis suscipit voluptatem reprehenderit. Quo distinctio id totam aut corporis esse provident delectus enim?</p></div>
+  
+</body>
+</html>
