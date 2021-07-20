@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<script src="https://kit.fontawesome.com/daab108b9f.js" crossorigin="anonymous"></script>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.list{
+			list-style: none;
+			display: flex;
+		}
+		.list li{
+			position: relative;
+		}
+		.list a{
+			display: block;
+			padding: 10px 10px;
+			text-decoration: none;
+		}
+		.list li + li::before{
+			content: '';
+			width: 1px;
+			height: 1em;
+			background-color: red;
+
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+		}
+		p{
+			font-size: 50px;
+			color: red;
+		}
+		p:hover{
+			color: blue;
+			animation: ha 2s 0s linear infinite alternate;
+		}
+		h1{
+			font-family: 'Zen Tokyo Zoo', cursive;
+		}
+		.box1{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			position: relative;
+			font-size: 100px;
+			animation: ha 2s 0s linear infinite alternate;
+		}
+		.box2{
+			width: 200px;
+			height: 200px;
+			background-color: green;
+			position: relative;
+			font-size: 100px;
+			animation: ha 5s;
+		}
+
+		@keyframes ha {
+			0%{ left: 0;}
+			50%{left: 100px;}
+			100%{left: 300px;}
+		}
+	</style>
+</head>
+<body>
+	<ul class="list">
+		<li><a href="#">link</a></li>
+		<li><a href="#">link</a></li>
+		<li><a href="#">link</a></li>
+		<li><a href="#">link</a></li>
+		<li><a href="#">link</a></li>
+		<li><a href="#">link</a></li>
+	</ul>
+
+
+	<p>
+		<i class="fas fa-space-shuttle"></i>
+		<!-- <i class="fas fa-meteor"></i> -->
+	</p>
+
+	<div class="box1"></div>
+	<div class="box2"></div>
+
+	<!-- <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis atque provident velit, quasi architecto quo consectetur eum voluptatum. Pariatur alias vero sunt eos cumque beatae ipsum excepturi illum harum nulla?</h1>
+
+</body>
+</html>

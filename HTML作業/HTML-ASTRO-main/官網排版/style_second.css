@@ -1,0 +1,391 @@
+p{
+	margin: 0;
+	line-height: 1.4rem;
+}
+.teacher,
+.report,
+.learn_path{
+	justify-content: center;
+	background-color: rgb(248, 249, 250);
+}
+/* 圖片圓角 */
+.teacher_card img,
+.lesson_card img{
+	border-radius: 50%;
+}
+/* 物件置中 */
+.report_body,
+.lesson_title,
+.lesson_box{
+	justify-content: center;
+}
+.lesson_subtitle1,
+.lesson_subtitle2{
+	width: 50%;
+	max-width: 510px;
+	margin: 0 2rem;
+}
+.recent_lesson,
+.path_title{
+	margin-left: 5.6rem;
+}
+/* ===================================================== */
+/* web body */
+.web{
+	width: 100%;
+	max-width: 1440px;
+	margin: auto;
+}
+/* for flex */
+.section{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* ===================================================== */
+.navbar{
+	font-size: 20px;
+	justify-content: flex-end;
+	width: 1440px;
+	background-color: white;
+	position: sticky;
+	top: 0;
+	margin: auto;
+
+}
+.navbar .home{
+	margin-right: auto;
+}
+.navbar_title{
+	margin: 1.2rem 0.8rem;
+}
+.navbar a{
+	text-decoration: none;
+	color: black;
+}
+
+/* ====================================================== */
+.banner{
+	height: 400px;
+	background-color: rgb(41, 46, 56);
+	margin-bottom: 10rem;
+}
+.banner::after{
+	margin-top: 5.2rem;
+	width: 0;
+	height: 0;
+	display: block;
+	content: '';
+	border-top: rgb(41, 47, 56) solid 100px;
+	border-left: transparent 480px solid;
+	border-right: transparent 960px solid;
+}
+.banner_title{
+	color: white;
+	margin-right: auto;
+	margin-left: auto;
+}
+.banner h1{
+	font-size: 40px;
+	margin-top: 8rem;
+}
+.banner a{
+	display: inline-block;
+	margin-top: 2rem;
+	background-color: red;
+	padding: 0.8rem 2rem;
+	text-decoration: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 16px;
+}
+
+/* ========================================================= */
+.value{
+	text-align: center;
+	margin: 3.5rem 0;
+}
+.value span::after{
+	content: '魚，';
+	border-bottom: 3px solid red;
+	padding-bottom: 0.5rem;
+}
+.content{
+	width: 33.33%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* ========================================================= */
+.teacher::before{
+	width: 0;
+	height: 0;
+	content: '';
+	display: block;
+	border-right: solid 960px transparent;
+	border-left: solid 480px transparent;
+	border-bottom: solid 150px rgb(248, 249, 250);
+	background-color: white;
+}
+.teacher_title{
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+	width: 66.66%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.teacher_title h2{
+	font-size: 2rem;
+}
+.teacher_title h2::before{
+	content: '講師';
+	border-bottom: 3px solid red;
+	padding-bottom: 0.5rem;
+}
+.teacher_title h4{
+	font-size: 1.25rem;
+}
+
+/* ============================================================= */
+.teacher_card{
+	border: solid 1px white;
+	background-color: white;
+	width: 50%;
+	max-width: 620px;
+	margin: 1rem;
+}
+.name{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2rem 1rem;
+	align-items: center;
+	border-bottom: solid 1px #ddd;
+	padding: 0 0 2rem 1rem;
+}
+.teacher_card .item{
+	margin-left: 1rem;
+}
+.introduce{
+	margin: 1rem;
+}
+.introduce p{
+	margin-bottom: 0.7rem;
+}
+.introduce .else{
+	margin: 2rem 0 1.5rem 0;
+	display: flex;
+
+}
+.else hr{
+	width: 80%;
+	height: 0%;
+}
+.teacher_card a{
+	text-decoration: none;
+	border: solid 1px red;
+	border-radius: 5px;
+	padding: 0.5rem;
+	color: red;
+	margin-right: 0.8rem;
+}
+
+/* ============================================================== */
+.report_title{
+	text-align: center;
+	margin: 5rem 0 3rem 0;
+	width: 100%;
+}
+.report_title span::after{
+	content: '體報';
+	border-bottom: 3px solid red;
+	padding-bottom: 0.5rem;
+}
+.blog{
+	width: 50%;
+	max-width: 620px;
+	margin: 1rem;
+}
+.news{
+	height: 120px;
+}
+.blog a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-size: 22px;
+	margin-bottom: 1rem;
+}
+.more_report a{
+	display: block;
+	color: white;
+	font-size: 20px;
+	width: 5rem;
+	background-color: red;
+	text-decoration: none;
+	border-radius: 5px;
+	margin: 2rem 0 10rem;
+	padding: 0.8rem 2rem;
+}
+.report::after{
+	width: 0;
+	height: 0;
+	content: '';
+	display: block;
+	border-left: solid 480px transparent;
+	border-right: solid 960px transparent;
+	border-bottom: solid 100px rgb(41, 47, 56);
+}
+
+/* ============================================================= */
+.lesson{
+	background-color: rgb(41, 47, 56);
+	color: white;
+	height: 900px;
+}
+.lesson_title h1::before{
+	content: '短期';
+	border-bottom: 3px solid red;
+	padding-bottom: 0.5rem;
+}
+
+.lesson_subtitle1 h3{
+	color: #aaa;
+}
+/* ============== */
+.lesson_subtitle2{
+	background-color: rgb(255, 20, 54);
+	height: 200px;
+	margin-top: 6rem;
+	padding: 2rem 1rem 0;
+}
+.lesson_subtitle2 a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	margin-top: 1.5rem;
+}
+
+/* ================== */
+.lesson_card{
+	width: 33%;
+	max-width: 400px;
+	margin: 0 1rem;
+	background-color: white;
+	color: #999;
+	border-radius: 10px;
+}
+.lesson_file{
+	height:200px;
+	display: flex;
+	flex-wrap: wrap;
+	color: white;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.file1{
+	background-color: rgb(22, 148, 106);
+}
+.file2{
+	background-color: rgb(189, 36, 36);
+}
+.file3{
+	background-color: rgb(255, 96, 109);
+}
+.lesson_card .item{
+	width: 50%;
+	padding: 0.5rem 2.5rem;
+	font-size: 20px;
+}
+.lesson_card .pic{
+	padding: 5rem 0rem;
+}
+/* ==================== */
+.lesson_time p{
+	width: 100px;
+	text-align: center;
+	border: 1px solid;
+	padding: 0.1rem;
+	border-radius: 5px;
+	margin: 1rem;
+}
+.lesson_time hr{
+	width: 92%;
+	color: #999;
+}
+.lesson_teacher{
+	justify-content: space-between;
+}
+.lesson_teacher p{
+	margin: 0.5rem 1rem 1rem;
+}
+/* ==================== */
+.more_lesson a{
+	display: block;
+	width: 6.3rem;
+	color: white;
+	font-size: 20px;
+	background-color: red;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 0.8rem 2rem;
+	margin: 4.05rem auto;
+}
+.learn_path::before{
+	width: 0;
+	height: 0;
+	content: '';
+	display: block;
+	border-left: solid 960px transparent;
+	border-right: solid 480px transparent;
+	border-top: solid 100px rgb(41, 47, 56);
+}
+/* ============================================================ */
+.path_title{
+	width: 60%;
+}
+.path_title h1::before{
+	content: '掌握';
+	border-bottom: 3px solid red;
+	padding-bottom: 0.5rem;
+}
+.path_card{
+	width: 33%;
+	max-width: 400px;
+	margin: 0 1rem;
+	background-color: white;
+	border-radius: 10px;
+}
+.learn_path .pcp1{
+	height: 180px;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.learn_path .pcp1 h1{
+	margin: 0;
+}
+.learn_path .pcp2{
+	margin: 0.5rem 1rem 1rem;
+}
+.pcp2 p{
+	padding-top: 0.5rem;
+	height: 4.8rem;
+}
+#pc1{
+	background-color: rgb(59, 120, 148);
+}
+#pc2{
+	background-color: rgb(125, 125, 125);
+}
+#pc3{
+	background-color: rgb(70, 13, 60);
+}
+.path_card a{
+	text-decoration: none;
+	color: red;
+}
+

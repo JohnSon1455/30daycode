@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="normalize.css">
+	<style>
+		/* 網頁本體 */
+		.web_body{
+			width: 100%;
+			background-color: rgb(248, 248, 248);
+		}
+		/* 導覽列 */
+		.navhead{
+			margin-top: 5px;
+		} /* 要寫才能對齊 */
+		.navbody{
+			display: flex;
+			margin-left: auto;
+		}
+		/* 字體置中 */
+		.item,
+		.report_title,
+		.more,
+		.evaluation_title,
+		.article_title{
+			margin: 5px 20px;
+			text-align: center;
+		}
+		/* 卡片內容 */
+		.content{
+			margin-top: 10px;
+		}
+		/* 物件置中排列 */
+		.box{
+			display: flex;
+			justify-content: center;
+		}
+		.advantage,
+		.teacher_card,
+		.report_title,
+		.blog,
+		.more,
+		.article_title{
+			margin-top: 50px;
+		}
+		.value,
+		.who_is_teacher,
+		.lesson,
+		.information{
+			margin-top: 100px;
+		}
+/*  */
+		/* 教師檔案格 */
+		.file{
+			width: 600px;
+			margin: 20px;
+			padding: 30px;
+			background-color: rgb(255, 255, 255);
+		}
+		.name{
+			display: flex;
+		}
+		.name img{
+			border-radius: 50%;
+		}
+		.teacher_card .card{
+			border-bottom: solid 1px;
+			padding-bottom: 25px;
+		}
+		.teacher_card .content{
+			margin: 30px;
+		}
+		.teacher_card .introduce{
+			margin-top: 25px;
+			line-height: 1.5em;
+		}
+		/* 課程小按鈕 */
+		a.class{
+			text-decoration: none;
+			border: solid 1px red;
+			border-radius: 8%;
+			margin: 0px 5px;
+		}
+		/* 紅字提醒 */
+		span{
+			color: red;
+		}
+
+		/* 更多連結標籤 */
+		.more a{
+			background-color: rgb(255, 20, 54);
+			border-radius: 8%;
+			color: white;
+			text-decoration: none;
+			font-size: 25px;
+			padding: 15px;
+		}
+
+		/* 新聞格 */
+		.report,
+		.lesson_note{
+			width: 630px;
+			margin-left: 50px;
+		}
+		/* 新聞格連結 */
+		.report a,
+		.article a{
+			text-decoration: none;
+			color: black;
+			font-size: 23px;
+		}
+		/* 課程卡片 */
+		.lesson_card,
+		.article_card{
+			width: 400px;
+			margin-left: 30px;
+		}
+		.lesson_title{
+			margin-left: 310px;
+		}
+		.lesson_card .content{
+			margin: 20px;
+		}
+
+		/* 公司資訊卡 */
+		.information{
+			color: white;
+			background-color: rgb(37, 42, 54);
+			height: 700px;
+			justify-content: flex-start;
+		}
+		.information a{
+			color: white;
+			text-decoration: none;
+		}
+
+		footer{
+			text-align: center;
+			background: rgb(26, 22, 22);
+			color: white;
+			padding: 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="web_body">
+		<div class="box navbar">
+			<div class="navhead">
+				<div class="item">
+					<p>{ruby}五倍紅寶石。專業程式教育機構</p>
+				</div>
+			</div>
+			<div class="navbody">
+				<div class="item">
+					<p>全方位培訓營</p>
+				</div>
+				<div class="item">
+					<p>ASTRO Camp</p>
+				</div>
+				<div class="item">
+					<p>線上課程</p>
+				</div>
+				<div class="item">
+					<p>短期課程</p>
+				</div>
+				<div class="item">
+					<p>專欄文章</p>
+				</div>
+				<div class="item">
+					<p>最新消息</p>
+				</div>
+			</div>
+		</div>
+<!--  -->
+		<div class="banner">
+			<img src="https://picsum.photos/1440/500?random=10" alt="" style="width: 100%;">
+		</div>
+<!--  -->
+		<div class="box value">
+			<div>
+				<h1>不只停留在教你釣魚，更引領你乘風破浪</h1>
+				<p>我們不藏私的教學，讓所有人都能發揮超越五倍的價值</p>
+			</div>
+		</div>
+<!--  -->
+		<div class="box advantage">
+			<div class="item">
+				<div class="pic">
+					<img src="https://picsum.photos/300/200?random=11" alt="">
+				</div>
+				<div class="content">
+					<h3>鍛鍊實力，主導學習</h3>
+					<p>搭配最新技術版本，掌握業界脈動，<br>與需求緊密結合，鍛鍊程式實力。</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="pic">
+					<img src="https://picsum.photos/300/200?random=12" alt="">
+				</div>
+				<div class="content">
+					<h3>完整規劃，絕不漏接</h3>
+					<p>線上補課、線下討論與社群活動，<br>確保學員擁有充分且多元的學習資源和支持活動。</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="pic">
+					<img src="https://picsum.photos/300/200?random=13" alt="">
+				</div>
+				<div class="content">
+					<h3>挑戰困境，突破職涯</h3>
+					<p>無論新手跨領域轉職，或在職工程師深度進修，<br>讓五倍為你解構學習，突破困境。</p>
+				</div>
+			</div>
+		</div>
+<!--  -->
+		<div class=" box who_is_teacher">
+			<div>
+				<div>
+					<h2>講師陣容</h2>
+				</div>
+				<div>
+					<p>我們的講師長期專注於網站開發技術領域，透過研討會、 社群演講及授<br>課方式將技術知識分享給更多人知道，讓更多人了解各個技術的美好之處。</p>
+				</div>
+			</div>
+		</div>
+<!--  -->
+		<div class="box teacher_card">
+			<div class="file">
+				<div class="card">
+					<div class="name">
+						<div class="pic">
+							<img src="https://picsum.photos/200/200?random=1" alt="">
+						</div>
+						<div class="content">
+							<p>HTML/CSS講師</p>
+							<h3>李建杭(Amos Lee)</h3>
+						</div>
+					</div>
+				</div>
+				<div class="introduce">
+					<p>從視覺設計轉職前端的斜槓開發者， 活耀於台灣各大技術研討會，熟稔<br>HTML & CSS、Bootstrap、RWD、CSS3等， 為國內知名前端技術講師。</p>
+					<p>2018年成為<span>YouTuber</span>，致力於使用簡單易懂的方式讓新手能夠輕鬆學習<br>前端開發技能。</p>
+					<p>iT邦幫忙鐵人賽連續三屆冠軍、連續兩屆優選，於2020出版「<span>都能懂<br>的C S S選取器： 金魚都能懂了你還怕學不會嗎（iT邦幫忙鐵人賽系列<br>書」</span>）一書，除了熱衷於牛排的熟成， 目前日益精進於釣魚技能。</p>
+					<p style="margin: 30px 0 30px;">講師其他課程</p>
+					<a href="" class="class"><span>網頁前端設計女性專班</span></a>
+					<a href="" class="class"><span>ＨＴＭＬ網頁設計新手村</span></a>
+				</div>
+			</div>
+			<div class="file">
+				<div class="card">
+					<div class="name">
+						<div class="pic">
+							<img src="https://picsum.photos/200/200?random=2" alt="">
+						</div>
+						<div class="content">
+							<p>Ruby / Git 講師</p>
+							<h3>高見龍 (Eddie Kao)</h3>
+						</div>
+					</div>
+				</div>
+				<div class="introduce">
+					<p>五倍紅寶石程式資訊教育股份有限公司負責人，在國內外各大型技術研討會擔任講<br>者，參與過日本 RubyKaigi、日本 Ruby World Conference、臺灣微軟 Azure<br> Developer Day 、RubyConf Taiwan、JSDC、WebConf 等。有二十年程式開發經驗<br>和十多年的教學經驗，在臺灣推廣 Ruby 及 Git 多年，在各大專院校與企業開課，深<br>受學員喜愛。</p>
+					<p>雖非資訊本科系出身，但喜歡寫程式，而且希望可以寫一輩子程式的電腦阿宅。</p>
+					<p>著有「為你自己學 Git」與「為你自己學 Ruby on Rails」暢銷技術書。</p>
+					<p style="margin: 30px 0 30px;">講師其他課程</p>
+					<a href="" class="class"><span>Ruby on Rails 實戰課程</span></a>
+					<a href="" class="class"><span>坐上 Git 時光機 - 版本控制</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="box teacher_card">
+			<div class="file">
+				<div class="card">
+					<div class="name">
+						<div class="pic">
+							<img src="https://picsum.photos/200/200?random=3" alt="">
+						</div>
+						<div class="content">
+							<p>Vue / JavaScript 講師</p>
+							<h3>許國政 (Kuro Hsu)</h3>
+						</div>
+					</div>
+				</div>
+				<div class="introduce">
+					<p>業界資深前端開發者，為臺灣各大型技術研討會 JSDC、WebConf、MOPCON、<br>COSCUP 的知名講者。</p>
+					<p>於 2019 年出版「0 陷阱！0 誤解！8 天重新認識 JavaScript！」，攻佔各大技術書<br>籍排行榜。</p>
+					<p>同時身兼 Vue.js Taiwan 社群主辦人，主辦的活動場場秒殺一票難求，衍伸開發的<br>週邊商品精緻實用，譽為被程式耽誤的週邊商品業者。</p>
+					<p style="margin: 30px 0 30px;">講師其他課程</p>
+					<a href="" class="class"><span>Vue.js 與 Vuex 前端開發實戰</span></a>
+					<a href="" class="class"><span>JavaScript / jQuery 前端開發入門實戰</span></a>
+				</div>
+			</div>
+			<div class="file">
+				<div class="card">
+					<div class="name">
+						<div class="pic">
+							<img src="https://picsum.photos/200/200?random=4" alt="">
+						</div>
+						<div class="content">
+							<p>React 講師</p>
+							<h3>廖珀均 (奶綠茶)</h3>
+						</div>
+					</div>
+				</div>
+				<div class="introduce">
+					<p>資深前端開發者與程式開發講師，授課資歷十年以上。</p>
+					<p>擅長 HTML、CSS、JavaScript、jQuery、Vue、React 開發應用與 Webpack 前端打<br>包工具等，專修各種前端跨平台的疑難雜症。</p>
+					<p>另一個身份為花鬍子樂團吉他手，育有二貓，喜愛小酌。</p>
+					<p style="margin: 30px 0 30px;">講師其他課程</p>
+					<a href="" class="class"><span>React 全攻略入門班</span></a>
+				</div>
+			</div>
+		</div>
+<!--  -->
+		<div class="report_title">
+			<h1>媒體報導</h1>
+		</div>
+<!--  -->
+		<div class="news_blog">
+			<div class="box">
+				<div class="report">
+					<a href="">想當高薪工程師 備妥三大關鍵能力求職更順暢</a>
+					<p>中時新聞網・2021/01</p>
+				</div>
+				<div class="report">
+					<a href="">營養系畢業、他撥接上網學程式，教人轉職工程師成功率達八<br>成！</a>
+					<p>EnglishOK・2020/03</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="report">
+					<a href="">教出八成轉職就業率、技術書籍狂賣15刷，程式教學大神竟是<br>營養系出身！</a>
+					<p>天下雜誌・2020/02</p>
+				</div>
+				<div class="report">
+					<a href="">從調酒師到工程師！她靠中英文線上課程自學一年，成功轉職</a>
+					<p>天下雜誌・2020/01</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="report">
+					<a href="">勇往「職」前！五倍紅寶石的 ASTRO Camp 舉辦第一屆 Demo<br> Day</a>
+					<p>INSIDE・2019/07</p>
+				</div>
+				<div class="report">
+					<a href="">無痛轉職都是騙人的！「微痛」學習法教你跨領域轉職工程師</a>
+					<p>INSIDE・2019/01</p>
+				</div>
+			</div>
+		</div>
+<!--  -->
+		<div class="more">
+			<a href="">更多報導</a>
+		</div>
+<!--  -->
+		<div class="lesson" style="background: rgb(37, 42, 54); height: 700px;">
+			<div class="box" style="color: white;">
+				<div class="lesson_note">
+					<h1>短期實體課程</h1>
+					<p>目標清晰的短期課程，針對單一技術所開設。適合在職進修的<br>工程師、PM，或對網頁設計有興趣的你。</p>
+				</div>
+				<div class="lesson_note">
+					<h2>後端課程</h2>
+					<p>專屬五倍的後端課程 Ruby on Rails ，一起踏入後端領域吧！</p>
+					<p>前往課程</p>
+				</div>
+			</div>
+
+			<div class="lesson_title" style="color: white;">
+				<h2>近期課程</h2>
+			</div>
+			
+			<div class="box teacher_lesson">
+				<div class="lesson_card" style="background: white;">
+					<div class="card" style="background-color: rgb(30, 152, 112); height: 200px;">
+						<div class="name">
+							<div class="content">
+								<h3>Vue.js與Vuex<br>前端開發</h3>
+							</div>
+							<div class="pic" style="margin: 90px 0 10px 150px;">
+								<img src="https://picsum.photos/80/80?random=3" alt="">
+							</div>
+						</div>
+					</div>
+					<div style="border-bottom: solid 1px;">
+						<p style="display: inline-block; border: solid 1px; margin-left: 5px; border-radius: 8%; padding: 5px;">2021/7月班</p>
+					</div>
+					<div>
+						<p style="margin-left: 5px;">講師：許國政 (Kuro Hsu)</p>
+					</div>
+				</div>
+				<div class="lesson_card" style="background: white;">
+					<div class="card" style="background: rgb(192, 51, 49); height: 200px;">
+						<div class="name">
+							<div class="content">
+								<h3>Ruby on Rails<br>實戰課程</h3>
+							</div>
+							<div class="pic" style="margin: 90px 0 10px 150px;">
+								<img src="https://picsum.photos/80/80?random=1" alt="">
+							</div>
+						</div>
+					</div>
+					<div style="border-bottom: solid 1px;">
+						<p style="display: inline-block; border: solid 1px; margin-left: 5px; border-radius: 8%; padding: 5px;">2021/7月班</p>
+					</div>
+					<div>
+						<p style="margin-left: 5px;">講師：高見龍 (Eddie Kao)</p>
+					</div>
+				</div>
+				<div class="lesson_card" style="background: white;">
+					<div class="card" style="background: rgb(255, 91, 104); height: 200px;">
+						<div class="name">
+							<div class="content">
+								<h3>網頁前端設計女性專班<br><span style="color: rgb(255, 91, 104);">none</span></h3>
+							</div>
+							<div class="pic" style="margin: 90px 0px 10px 75px;">
+								<img src="https://picsum.photos/80/80?random=2" alt="">
+							</div>
+						</div>
+					</div>
+					<div style="border-bottom: solid 1px;">
+						<p style="display: inline-block; border: solid 1px; margin-left: 5px; border-radius: 8%; padding: 5px;">2021/10月班</p>
+					</div>
+					<div>
+						<p style="margin-left: 5px;">講師：李建杭(Amos Lee)</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="more">
+				<a href="">看更多課程</a>
+			</div>
+		</div>
+<!--  -->
+		<div class="lesson" style="height: 800px;">
+			<div class="lesson_title" >
+				<h1>掌握自己的學習路徑</h1>
+				<h3>針對不同需求的學員，五倍規劃了多元且完整的學習路徑：從前端到後端，全方面的包套課程，與彈性<br>的線上課程、假日班，任您自由選擇。</h3>
+			</div>
+			
+			<div class="box teacher_lesson">
+				<div class="lesson_card" style="background: rgb(255, 255, 255)">
+					<div class="card" style="background-color: rgb(61, 125, 145);height: 200px;">
+						<div class="box" style="padding-top: 40px;">
+							<h1>I'm coding it!<br>微痛轉職工程師</h1>
+						</div>
+					</div>
+					<div style="border-bottom: solid 1px;">
+						<h3 style="margin-left: 10px;">線上課程</h3>
+					</div>
+					<div>
+						<p style="margin-left: 10px;">不限時間、地點，自己掌握學習進度。課程內容包含前<br>後端課程，附加完課即提供免費履歷健檢服務。適合在<br>職、喜歡自己掌握進度的人。</p>
+						<p><span style="margin-left: 10px;">前往課程></span></p>
+					</div>
+				</div>
+				<div class="lesson_card" style="background: rgb(255, 255, 255)">
+					<div class="card" style="background-color: rgb(146, 150, 152);height: 200px;">
+						<div class="box" style="padding-top: 40px;">
+							<h1>全方位<br>網頁設計前後實戰</h1>
+						</div>
+					</div>
+					<div style="border-bottom: solid 1px;">
+						<h3 style="margin-left: 10px;">全方位培訓營</h3>
+					</div>
+					<div>
+						<p style="margin-left: 10px;">課程包含 Git / HTML / JavaScript / Ruby on Rails 適合在<br>職或希望利用假日上課的人。<br><span style="color: white;">none</span></p>
+						<p><span style="margin-left: 10px;">前往課程></span></p>
+					</div>
+				</div>
+				<div class="lesson_card" style="background: rgb(255, 255, 255)">
+					<div class="card" style="background-color: rgb(99, 12, 62);height: 200px;">
+						<div class="box" style="padding-top: 40px;">
+							<h1>ASTRO Camp<br>全端工程師實戰訓練營</h1>
+						</div>
+					</div>
+					<div style="border-bottom: solid 1px;">
+						<h3 style="margin-left: 10px;">線上課程</h3>
+					</div>
+					<div>
+						<p style="margin-left: 10px;">除了提供前端到後端課程外，課程期間還包含履歷健<br>檢、模擬面試、專題製作、企業交流等服務。適合有時<br>間決心轉職工程師的素人。</p>
+						<p><span style="margin-left: 10px;">前往課程></span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--  -->
+		<div class="member_evaluation" style="height: 400px;">
+			<div class="evaluation_title">
+				<h1>在五倍，我們一起超越五倍</h1>
+			</div>
+			<div class="box">
+				<div class="commit_card">
+					<div class="card" style="border: 1px solid; margin-left: 20px; padding: 10px; border-radius: 8%;">
+						<div>
+							<p>五倍是個很有溫度的地方，有為你著想<br>的課務，無條件包容的助教，也吸引能<br>一起成長互相分享的上課夥伴～</p>
+						</div>
+						<div class="name">
+							<div class="pic" style="margin-left: 10px;">
+								<img src="https://picsum.photos/50/50?random=21" alt="">
+							</div>
+							<div class="content" style="margin-left: 10px;">
+								<p>陳炯翰</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="commit_card">
+					<div class="card" style="border: 1px solid; margin-left: 20px; padding: 10px; border-radius: 8%;">
+						<div>
+							<p>因為工作上的需求選擇到五倍紅寶石進<br>修，最吸引我的地方是課務專員很親<br>切、細心聆聽我的需求並且給予課程的<br>建議，雖然是程式新手，但對這間教室<br>機構有大大的信任感。果不其然，課程<br>也沒有叫人失望，非常推薦五倍紅寶石<br>的課程給有程式需求的人來上課唷！</p>
+						</div>
+						<div class="name">
+							<div class="pic" style="margin-left: 10px;">
+								<img src="https://picsum.photos/50/50?random=22" alt="">
+							</div>
+							<div class="content" style="margin-left: 10px;">
+								<p>郭泇吟</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="commit_card">
+					<div class="card" style="border: 1px solid; margin-left: 20px; padding: 10px; border-radius: 8%;">
+						<div>
+							<p>師資很強大，能接受學員意見彈性變化<br>課程內容，每次上課練習專案都不一<br>樣，充足且強大的助教群，能問好、問<br>滿、問到飽。</p>
+						</div>
+						<div class="name">
+							<div class="pic" style="margin-left: 10px;">
+								<img src="https://picsum.photos/50/50?random=23" alt="">
+							</div>
+							<div class="content" style="margin-left: 10px;">
+								<p>陳振庭</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="commit_card">
+					<div class="card" style="border: 1px solid; margin-left: 20px; padding: 10px; border-radius: 8%;">
+						<div>
+							<p>在五倍紅寶石上課，是一件非常享受的<br>事情，寬敞的上課空間，老師教學口條<br>清晰易懂，上課練習題也非常實用！讓<br>原本看到 CSS 像文盲一樣的我，突然可<br>以稍微認得它們了！非常值得！</p>
+						</div>
+						<div class="name">
+							<div class="pic" style="margin-left: 10px;">
+								<img src="https://picsum.photos/50/50?random=24" alt="">
+							</div>
+							<div class="content" style="margin-left: 10px;">
+								<p>呂佳容</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>	
+		</div>
+<!--  -->
+		<div class="article_title">
+			<h1>精選文章</h1>
+		</div>
+<!--  -->
+		<div class="box article">
+			<div class="article_card">
+				<div class="pic">
+					<img src="https://picsum.photos/400/250?random=50" alt="" style="border-radius: 5%;">
+				</div>
+				<div class="content">
+					<a href="">用 Rails 串接藍新金流一點都不難！</a>
+					<p>By Yuchan・6月 25 2021・技術文章</p>
+				</div>
+			</div>
+			<div class="article_card">
+				<div class="pic">
+					<img src="https://picsum.photos/400/250?random=51" alt="" style="border-radius: 5%;">
+				</div>
+				<div class="content">
+					<a href="">讓人心動的 6 個 React Design Systems</a>
+					<p>By Debby・6月 8 2021・技術文章</p>
+				</div>
+			</div>
+			<div class="article_card">
+				<div class="pic">
+					<img src="https://picsum.photos/400/250?random=52" alt="" style="border-radius: 5%;">
+				</div>
+				<div class="content">
+					<a href="">網站開發新手必知 - 什麼是 HTML / CSS / JavaScript ？</a>
+					<p>By Debby・5月 19 2021・技術文章</p>
+				</div>
+			</div>
+		</div>
+<!--  -->
+		<div class="more">
+			<a href="">更多文章</a>
+		</div>
+<!--  -->
+		<div class="box information">
+			<div style="width: 800px; padding-top: 100px; padding-left: 200px;">
+				<h1>5x{Ruby}・tw</h1>
+				<p>五倍紅寶石・專業程式教育</p>
+				<p><a href="">電話 | (02) 2331-5247</a></p>
+				<p><a href="">信箱 | course@5xcampus.com</a></p>
+				<p><a href="">地址 | 10046 台北市中正區衡陽路 7 號 5 樓</a></p>
+			</div>
+			<div style="display: flex; flex-wrap: wrap; padding-top: 100px;">
+				<div style="width: 300px;">
+					<h3>專業課程</h3>
+					<p><a href="">全方位培訓營</a></p>
+					<p><a href="">ASTRO Camp</a></p>
+					<p><a href="">線上課程</a></p>
+					<p><a href="">短期課程</a></p>
+				</div>
+				<div style="width: 300px;">
+					<h3>關於我們</h3>
+					<p><a href="">關於五倍紅寶石</a></p>
+					<p><a href="">聯絡我們</a></p>
+					<p><a href="">媒體報導</a></p>
+				</div>
+				<div style="width: 300px;">
+					<h3>部落格</h3>
+					<p><a href="">專欄文章</a></p>
+					<p><a href="">最新消息</a></p>
+				</div>
+				<div style="width: 300px;">
+					<h3>幫助與政策</h3>
+					<p><a href="">常見問題</a></p>
+					<p><a href="">隱私權政策</a></p>
+					<p><a href="">服務條款</a></p>
+				</div>
+			</div>
+		</div>
+<!--  -->
+		<footer>© 2014 - 2021 五倍紅寶石程式資訊教育股份有限公司 (5xRuby Training Group CO., LTD) | 台北市短期補習班立案 第 7594 號</footer>
+	</div>
+
+
+
+</body>
+</html>

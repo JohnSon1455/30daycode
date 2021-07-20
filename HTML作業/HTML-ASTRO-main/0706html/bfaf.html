@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		p{
+			font-size: 50px;
+		}
+		p::before{
+			content: 'iiiiiiiiii';
+			background-color: red;
+			border-bottom: #0fa solid 3px;
+		}
+		p::after{
+			content: 'aaaaaaaaaaa';
+			background-color: orange;
+			border-bottom: solid 3px black;
+		}
+
+		.flag{
+			margin: auto;
+			width: 50px;
+		}
+		.txt{
+			text-align: center;
+			background-color: orange;
+			padding: 50px 0;
+		}
+		.flag::after{
+			content: '';
+			width: 0;
+			height: 0;
+			display: block;
+			
+			border-bottom: solid 25px transparent;
+			border-right: solid 25px orange;
+			border-left: solid 25px orange;
+		}
+
+
+	</style>
+</head>
+<body>
+	<p>hahahahaahaha</p>
+
+
+	<div class="flag">
+		<div class="txt">8折</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* 網頁本體 */
+.web_body{
+	width: 100%;
+	background-color: rgb(248, 248, 248);
+}
+/* 導覽列 */
+.navhead{
+	margin-top: 5px;
+} /* 要寫才能對齊 */
+.navbody{
+	display: flex;
+	margin-left: auto;
+}
+.banner img{
+	width: 100%;
+}
+/* 字體置中 */
+.item,
+.report_title,
+.more,
+.evaluation_title,
+.article_title{
+	margin: 5px 20px;
+	text-align: center;
+}
+/* 卡片內容 */
+.content{
+	margin-top: 10px;
+}
+/* 物件置中排列 */
+.box{
+	display: flex;
+	justify-content: center;
+}
+/* 上面拉空間 */
+.advantage,
+.teacher_card,
+.report_title,
+.blog,
+.more,
+.article_title{
+	margin-top: 50px;
+}
+.value,
+.who_is_teacher,
+.lesson,
+.information{
+	margin-top: 100px;
+}
+/*  */
+/* 教師檔案格 */
+.file{
+	width: 600px;
+	margin: 20px;
+	padding: 30px;
+	background-color: rgb(255, 255, 255);
+}
+.name{
+	display: flex;
+}
+.name img{
+	border-radius: 50%;
+}
+.teacher_card .card{
+	border-bottom: solid 1px;
+	padding-bottom: 25px;
+}
+.teacher_card .content{
+	margin: 30px;
+}
+.teacher_card .introduce{
+	margin-top: 25px;
+	line-height: 1.5em;
+}
+/* 課程小按鈕 */
+a.class{
+	text-decoration: none;
+	border: solid 1px red;
+	border-radius: 10px;
+	margin: 0px 5px;
+	padding: 5px;
+}
+/* 紅字提醒 */
+span{
+	color: red;
+}
+
+/* 更多連結標籤 */
+.more a{
+	background-color: rgb(255, 20, 54);
+	border-radius: 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+	padding: 15px;
+}
+
+/* 新聞格 */
+.report,
+.lesson_note{
+	width: 630px;
+	margin-left: 50px;
+}
+/* 新聞格連結 */
+.report a,
+.article a{
+	text-decoration: none;
+	color: black;
+	font-size: 23px;
+}
+/* 課程卡片 */
+.lesson{
+	background: rgb(37, 42, 54);
+	height: 700px;
+}
+.lesson_card,
+.article_card{
+	width: 400px;
+	margin-left: 30px;
+}
+.lesson_title{
+	margin-left: 310px;
+}
+.lesson_card .content{
+	margin: 20px;
+}
+
+/* 公司資訊卡 */
+.information{
+	color: white;
+	background-color: rgb(37, 42, 54);
+	height: 700px;
+	justify-content: flex-start;
+}
+.information a{
+	color: white;
+	text-decoration: none;
+}
+
+footer{
+	text-align: center;
+	background: rgb(26, 22, 22);
+	color: white;
+	padding: 20px;
+}

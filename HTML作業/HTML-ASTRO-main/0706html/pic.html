@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 900px;
+			height: 900px;
+			background-color: #aaa;
+			background-image: url('https://picsum.photos/300/200?random=10'),
+							  url('https://picsum.photos/300/200?random=11'),
+							  url('https://picsum.photos/300/200?random=12'),
+							  url('https://picsum.photos/300/200?random=13');
+			background-repeat: no-repeat;
+
+			background-position: right 40% bottom 30%,
+								 left 30% top 33%,
+								 left 75% bottom 75%,
+								 right 50% top 50%;
+			/* background-size: contain; */						
+		}
+		.section{
+			width: 900px;
+			height: 900px;
+			background-color: #aaa;
+			background-image: url('https://picsum.photos/500/400?random=10');
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+	</div>
+	<div class="section"></div>
+	
+</body>
+</html>

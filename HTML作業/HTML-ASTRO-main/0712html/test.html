@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 900px;
+			height: 900px;
+			display: flex;
+			background-color: #ccc;
+			/* flex-direction: row-reverse; */
+			/* 主軸交換 */
+			flex-wrap: wrap;
+			/* 副軸交換 */
+			position: relative;
+			/* direction: rtl; */
+		}
+		.item1{
+			width: 400px;
+			height: 400px;
+			margin: auto;
+			background-color: red;
+		}
+		.item2{
+			width: 400px;
+			height: 400px;
+			margin: auto;
+			background-color: blue;
+			/* position: absolute; */
+			/* top: 0;left: 0; */
+		}
+		.item3{
+			width: 400px;
+			height: 400px;
+			margin: auto;
+			background-color: green
+		}
+		.item4{
+			width: 400px;
+			height: 400px;
+			margin: auto;
+			background-color: yellow
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="item1"></div>
+		<div class="item2"></div>
+		<div class="item3"></div>
+		<div class="item4"></div>
+	</div>
+
+
+
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+</body>
+</html>

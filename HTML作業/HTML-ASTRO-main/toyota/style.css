@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.box{
+	width: 700px;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* border: solid 1px; */
+}
+.header{
+	width: 220px;
+	z-index: 3;
+	position: relative;
+	top: 125px;
+	left: -30%;
+}
+.header_reverse{
+	width: 220px;
+	z-index: 3;
+	position: relative;
+	top: 125px;
+	right: -30%;
+}
+.title{
+	display: flex;
+	background: red;
+	color: white;
+	padding: 10px 0;
+	align-items: center;
+}
+.title .num{
+	writing-mode: vertical-lr;
+	font-size: 70px;
+}
+.content{
+	background: black;
+	color: white;
+	padding: 10px 10px 20px;
+	font-size: 13px;
+}
+.pic::before{
+	display: block;
+	content: '';
+	width: 200px;
+	height: 150px;
+	background-color: rgba(129, 125, 125, 0.5);
+	position: absolute;
+	top: -18%;
+	right: -10%;
+	z-index: -1;
+}
+.pic{
+	position: relative;
+}
+.pic .flag{
+	width: 40px;
+	height: 30px;
+	background: red;
+	position: absolute;
+	top: 45%;
+	right: -1.5%;
+}
+.flag::after{
+	content: '';
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-top: solid transparent 10px;
+	border-left: solid white 15px;
+	border-bottom: solid transparent 10px;
+	top: 20%;
+	left: 40%;
+}
+.pic .flag_reverse{
+	width: 40px;
+	height: 30px;
+	background: red;
+	position: absolute;
+	top: 45%;
+	left: -1.5%;
+}
+.flag_reverse::after{
+	content: '';
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-top: solid transparent 10px;
+	border-left: solid white 15px;
+	border-bottom: solid transparent 10px;
+	top: 20%;
+	left: 40%;
+}
+
+.intro{
+	width: 400px;
+	background: #ccc;
+	font-size: 10px;
+	padding: 7px;
+	position: relative;
+	top: -18px;
+	left: -8%;
+}
+.intro_reverse{
+	width: 400px;
+	background: #ccc;
+	font-size: 10px;
+	padding: 7px;
+	position: relative;
+	top: -18px;
+	left: -8%;
+}
+.intro p,
+.intro_reverse p{
+	margin-bottom: 6px;
+}
+.intro h3,
+.intro_reverse h3{
+	width: 20%;
+	background: black;
+	color: white;
+	text-align: center;
+}
+.intro li,
+.intro_reverse li{
+	margin: 2px 12px;
+}
+
+.red_p{
+	display: flex;
+	color: red;
+}
+.red_p::after{
+	content: '';
+	width: 0;
+	height: 1px;
+	flex-grow: 1;
+	background-color: red;
+	margin-top: 6px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.group{
+			max-width: 1200px;
+			margin: auto;
+		}
+		.item{
+			margin: 10px;
+			border: 1px solid #888;
+			/*padding: 10px;*/
+		}
+		.item img{
+			width: 100%;
+			border: 10px solid transparent;
+			box-sizing: border-box;
+		}
+		/*.item img{
+			width: calc(100% - 20px);
+			margin: 10px;
+		}*/
+		/*.item .pic{
+			padding: 10px;
+		}*/
+		@media screen and (min-width: 768px){
+			.item{
+				display: flex;
+			}
+			.item .pic{
+				width: 50%;
+			}
+			.item .txt{
+				width: 50%;
+				box-sizing: border-box;
+				padding-left: 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+	
+
+
+	<div class="group">
+		<div class="item">
+			<div class="pic">
+				<img src="https://fakeimg.pl/350x200/?text=img">
+			</div>
+			<div class="txt">
+				<h3>title</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, esse.</p>
+			</div>
+		</div>
+		<div class="item">
+			<div class="pic">
+				<img src="https://fakeimg.pl/350x200/?text=img">
+			</div>
+			<div class="txt">
+				<h3>title</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, esse.</p>
+			</div>
+		</div>
+		<div class="item">
+			<div class="pic">
+				<img src="https://fakeimg.pl/350x200/?text=img">
+			</div>
+			<div class="txt">
+				<h3>title</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, esse.</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>

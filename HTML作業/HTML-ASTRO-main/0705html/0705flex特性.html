@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.box{
+			display: flex;
+			flex-wrap: wrap;
+			width: 600px;
+			height: 600px;
+			background-color: #ccc;
+			/* align-content: flex-start;
+			align-items: flex-end; */
+			/* align-content: center;
+				align-items: center; */
+		}
+		.item{
+			width: 150px;
+			height: 100px;
+			background-color: #fa0;
+			font-size: 20px;
+			display: flex;
+			margin: 4px;
+			/* margin: auto; */
+		}
+		.item:nth-child(1){
+			height: 150px;
+		}
+		.item:nth-child(2){
+			align-self: flex-end;
+		}
+		.item:nth-child(4){
+			height: 130px;
+		}
+		.item:nth-child(7){
+			height: 180px;
+		}
+		p{
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="item">
+			<p>1</p>
+		</div>
+		<div class="item">
+			<p>2</p>
+		</div>
+		<div class="item">
+			<p>3</p>
+		</div>
+		<div class="item">
+			<p>4</p>
+		</div>
+		<div class="item">
+			<p>5</p>
+		</div>
+		<div class="item">
+			<p>6</p>
+		</div>
+		<div class="item">
+			<p>7</p>
+		</div>
+		<div class="item">
+			<p>8</p>
+		</div>
+	</div>
+</body>
+</html>

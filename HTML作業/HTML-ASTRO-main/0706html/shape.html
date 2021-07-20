@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.box{
+			margin: auto;
+			margin-bottom: 2rem;
+
+			width: 0px;
+			height: 0px;
+			border-top: 150px solid black;
+			border-right: 120px solid black;
+			border-left: 120px solid black;
+			border-bottom: 50px solid transparent;
+		}
+
+
+
+		.section{
+			--sec: pink;
+		}
+
+		.flag{
+			margin: auto;
+			width: 50px;
+
+			display: flex;
+			flex-direction: column;
+
+			text-align: center;
+
+		}
+		.title{
+			background-color: var(--sec);
+		}
+
+		.foot{
+			--v-25: 25px;
+			--v-15: 15px;
+			width: 0px;
+			height: 0px;
+
+			border-top: orange var(--v-15) solid;
+			border-right: solid var(--v-25) red;
+			border-left: solid var(--v-25) orange;
+			border-bottom: solid var(--v-15) transparent;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="section">
+		<div class="box"></div>
+		<div class="flag">
+			<div class="title">
+				<h2>8折</h2>
+			</div>
+			<div class="foot"></div>
+		</div>
+	</div>
+</body>
+</html>

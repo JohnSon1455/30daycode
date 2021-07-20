@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.group{
+			width: 960px;
+			margin: 0 auto;
+		}
+		.item{
+			padding: 50px 0;
+		}
+		.item .value{
+			width: 320px;
+			color: white;
+		}
+		.item:nth-child(even) .value{
+			position: relative;
+			right: -600px;
+		}
+		.item .value .title{
+			background-color: red;
+			font-size: 40px;
+			padding: 5px;
+		}
+		.item .value .value_txt{
+			background-color: black;
+			position: absolute;
+			width: 320px;
+			box-sizing: border-box;
+			padding: 10px;
+		}
+		.item .pic::before{
+			content: '';
+			width: 300px;
+			height: 200px;
+			background-color: #ddd;
+			position: absolute;
+
+			top: -70px;
+			right: -30px;
+			z-index: -1;
+
+		}
+		.item .mv{
+			width: 640px;
+			margin-left: 200px;
+			position: relative;
+		}
+		.item .mv a{
+			display: flex;
+			align-items: center;
+		}
+		.item .mv img{
+			width: 100%;
+			vertical-align: middle;
+		}
+		.item .mv .flag{
+			width: 80px;
+			height: 50px;
+			background-color: red;
+			margin-left: -50px;
+			position: relative;
+		}
+		.item:nth-child(even) .mv a{
+			flex-direction: row-reverse;
+		}
+		.item:nth-child(even) .mv .flag{
+			position: relative;
+			margin-right: -50px;
+		}
+		.item .mv .flag::after{
+			content: '';
+			width: 0;
+			height: 0;
+			position: absolute;
+			border-top: solid 15px transparent;
+			border-left: solid 25px white;
+			border-bottom: solid 15px transparent;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			margin: auto;
+		}
+
+		.item .main_txt .renew{
+			order: -1;
+			color: red;
+			display: flex;
+			padding-bottom: 0.5em;
+		}
+		.item .main_txt .renew::after{
+			content: '';
+			width: 0;
+			height: 1px;
+			flex-grow: 1;
+			background-color: red;
+			margin-top: 0.7em;
+		}
+		.item .main_txt{
+			background-color: #ccc;
+			width: 640px;
+			box-sizing: border-box;
+			margin-left: 100px;
+			margin-top: -1.5em;
+			padding: 10px;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			
+		}
+		.item:nth-child(even) .main_txt{
+			margin-left: 260px;
+		}
+		.item .main_txt .txt h3{
+			color: white;
+			background-color: black;
+			display: inline-block;
+			padding: 2px;
+		}
+		.item .main_txt .txt p{
+			margin-left: 1em;
+			position: relative;
+		}
+		.item .main_txt .txt p::before{
+			position: absolute;
+			content: '';
+			width: 5px;
+			height: 5px;
+			background: black;
+			border-radius: 50%;
+			left: -10px;
+			top: 10px;
+		}
+
+	</style>
+</head>
+<body>
+	<section class="group">
+		<div class="item">
+			<div class="value">
+				<div class="title">
+					<h1><span>01</span>操控樂趣</h1>
+				</div>
+				<div class="value_txt">
+					<h3>人人滿意的駕駛體驗</h3>
+					<p>上漲會不會在這個界面作出情感不再簡單告訴你尋求職業，認證批評利用認真存在最新則是浪費微微這裡，職位。</p>
+				</div>
+			</div>
+			<div class="mv">
+				<a href="#">
+					<span class="pic"><img src="https://picsum.photos/800/500?random=10" alt=""></span>
+					<span class="flag"></span>
+				</a>
+			</div>
+			<div class="main_txt">
+				<div class="txt">
+					<h3>低中心設定</h3>
+					<p>點這裡精神本身舉辦準備模型有利於感受，可以說其他的，樣子再。</p>
+					<h3>車體剛性強化</h3>
+					<p>女性主角任務臉上意義司機就業帝國準確一款提升四個必要聰明上漲，氣氛漢化青春我的毫不及其現代化要有居民人士，電子經濟發展。</p>
+					<h3>四輪獨立懸吊</h3>
+					<p>運動應當夏天彷彿，普遍人士發生二人晶片嘿嘿付出隱藏版靈魂批評以往解決方案，最快任意發佈日期成為儘管中學商標黃金矛盾，硬體姑娘，認證理論低價思想角度畢業生全身十分體驗再也新手恢復生日內置，尊重品質，因。收到作品說到身影很難足夠意思每一個考慮，出租只不過我一科學予以著名資本是他戰鬥俱樂部台北指揮，學生。</p>
+				</div>
+				<div class="renew"><p>因為我們做了這些革新</p></div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="value">
+				<div class="title">
+					<h1><span>01</span>操控樂趣</h1>
+				</div>
+				<div class="value_txt">
+					<h3>人人滿意的駕駛體驗</h3>
+					<p>上漲會不會在這個界面作出情感不再簡單告訴你尋求職業，認證批評利用認真存在最新則是浪費微微這裡，職位。</p>
+				</div>
+			</div>
+			<div class="mv">
+				<a href="#">
+					<span class="pic"><img src="https://picsum.photos/800/500?random=10" alt=""></span>
+					<span class="flag"></span>
+				</a>
+			</div>
+			<div class="main_txt">
+				<div class="txt">
+					<h3>低中心設定</h3>
+					<p>點這裡精神本身舉辦準備模型有利於感受，可以說其他的，樣子再。</p>
+					<h3>車體剛性強化</h3>
+					<p>女性主角任務臉上意義司機就業帝國準確一款提升四個必要聰明上漲，氣氛漢化青春我的毫不及其現代化要有居民人士，電子經濟發展。</p>
+					<h3>四輪獨立懸吊</h3>
+					<p>運動應當夏天彷彿，普遍人士發生二人晶片嘿嘿付出隱藏版靈魂批評以往解決方案，最快任意發佈日期成為儘管中學商標黃金矛盾，硬體姑娘，認證理論低價思想角度畢業生全身十分體驗再也新手恢復生日內置，尊重品質，因。</p>
+				</div>
+				<div class="renew"><p>因為我們做了這些革新</p></div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="value">
+				<div class="title">
+					<h1><span>01</span>操控樂趣</h1>
+				</div>
+				<div class="value_txt">
+					<h3>人人滿意的駕駛體驗</h3>
+					<p>上漲會不會在這個界面作出情感不再簡單告訴你尋求職業，認證批評利用認真存在最新則是浪費微微這裡，職位。</p>
+				</div>
+			</div>
+			<div class="mv">
+				<a href="#">
+					<span class="pic"><img src="https://picsum.photos/800/500?random=10" alt=""></span>
+					<span class="flag"></span>
+				</a>
+			</div>
+			<div class="main_txt">
+				<div class="txt">
+					<h3>低中心設定</h3>
+					<p>點這裡精神本身舉辦準備模型有利於感受，可以說其他的，樣子再。</p>
+					<h3>車體剛性強化</h3>
+					<p>女性主角任務臉上意義司機就業帝國準確一款提升四個必要聰明上漲，氣氛漢化青春我的毫不及其現代化要有居民人士，電子經濟發展。</p>
+					<h3>四輪獨立懸吊</h3>
+					<p>運動應當夏天彷彿，普遍人士發生二人晶片嘿嘿付出隱藏版靈魂批評以往解決方案，最快任意發佈日期成為儘管中學商標黃金矛盾，硬體姑娘，認證理論低價思想角度畢業生全身十分體驗再也新手恢復生日內置，尊重品質，因。</p>
+				</div>
+				<div class="renew"><p>因為我們做了這些革新</p></div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

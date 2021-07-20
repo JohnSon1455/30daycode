@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.section{
+			width: 300px;
+			height: 300px;
+			background-color: #ccc;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			margin: 100px;
+			background-color: red;
+			transition: 5s;
+		}
+		.box:hover{
+			transform: scale(2) rotateY(10turn) rotateZ(10turn) translate(150px);
+			border-radius: 50%;	
+		}
+		.bcg{
+			width: 300px;
+			height: 200px;
+			background-color: #ccc;
+			background-image: linear-gradient(45deg, red, blue);
+			background-size: 300px 100px;
+			background-repeat: no-repeat;
+			background-position: center;
+			transition: 1s;
+		}
+		.bcg:hover{
+			transform: rotate(3turn);
+			background-size: cover;
+		}
+
+
+
+
+
+		/* p{
+			padding-left: 1em;
+
+			background-image: linear-gradient(0deg, red, red);
+			background-repeat: no-repeat;
+
+			background-size: 10px 10px;
+			background-position: 4px 4px;
+		} */
+
+		p{
+			background-color: rosybrown;
+			padding-left: 1em;
+
+			position: relative;
+
+		}
+		p::before{
+			content: '';
+			
+			width: 5px;
+			height: 5px;
+			background-color: red;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			border-radius: 50%;
+
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="section">
+		<div class="box"></div>
+	</div>
+
+	<div class="bcg"></div>
+
+	<div class="section">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maxime laboriosam voluptatem ipsum neque esse vitae, qui in blanditiis fuga aspernatur nihil? Corrupti accusamus soluta enim, quaerat rem dolor pariatur.</p>
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem reiciendis minima quam suscipit nobis temporibus eum? Officia sequi enim earum vel. Pariatur, quasi quod! Recusandae voluptas veritatis commodi animi nulla?</p>
+	</div>
+	
+</body>
+</html>

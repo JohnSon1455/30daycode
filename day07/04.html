@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.item{
+			height: 200px;
+			background-color: #aaa;
+			font-size: 100px;
+			margin-bottom: 20px;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		@media screen and (min-width: 768px) {
+			.wrap{
+				display: flex;
+			}
+			.item{
+				width: 50%;
+			}
+			
+		}
+	</style>
+</head>
+<body>
+	
+
+	<div class="wrap">
+		<div class="item">A</div>
+		<div class="item">B</div>
+	</div>
+
+
+</body>
+</html>

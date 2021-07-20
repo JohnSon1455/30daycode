@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.check label{
+			display: inline-block;
+			padding: 10px, 20px;
+		}
+		.check label:hover{
+			cursor: pointer;
+			background-color: #ccc;
+		}
+
+	</style>
+</head>
+<body>
+
+<table width='500' border="3">
+	<caption>標題</caption>
+	<thead>
+		<tr>
+			<th scope="col">姓名</th>
+			<th scope="col">Chinese</th>
+			<th scope="col">Math</th>
+			<th scope="col">English</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+			<th scope="row">Andy</th>
+			<td>資料</td>
+			<td>資料</td>
+			<td>資料</td>
+		</tr>
+		<tr>
+			<th scope="row">Amy</th>
+			<td>資料</td>
+			<td>資料</td>
+			<td>資料</td>
+		</tr>
+		<tr>
+			<th scope="row">Louis</th>
+			<td>資料</td>
+			<td>資料</td>
+			<td>資料</td>
+		</tr>
+	</tbody>
+
+	<tfoot>
+		<tr>
+			<th scope="row" rowspan="2">備註</th>
+			<td>資料</td>
+			<td>資料</td>
+			<td>資料</td>
+		</tr>
+		<tr>
+			<!-- <th scope="row">備註</th> -->
+			<td colspan="3">資料</td>
+			<!-- <td>資料</td>
+			<td>資料</td> -->
+		</tr>
+	</tfoot>
+</table>
+
+<p>#############################</p>
+
+<table width='400' border="3">
+	<!-- <p>自動生成<tbody></tbody></p> -->
+	<tr>
+		<td>data</td>
+		<td>data</td>
+		<td>data</td>
+		<td>data</td>
+		<td>data</td>
+	</tr>
+</table>
+
+<p>#############################</p>
+
+<form action="">
+	<p>點選有反應</p>
+
+	<div>
+		<label for="user_name">name</label>
+		<input type="text" id="user_name" >
+	</div>
+
+	<div>
+		<label>
+			name
+			<input type="text">
+		</label>
+	</div>
+
+	<p>點選沒反應</p>
+
+	<div>
+		<label for="">name</label>
+		<input type="text">		
+	</div>
+
+	<p>#############################</p>
+
+	<div>
+		性別
+		<label>
+			<input type="radio" name="sex">	male
+		</label>
+		<label>
+			<input type="radio" name="sex">	female
+		</label>
+	</div>
+
+	<div>
+		<label>
+			密碼
+			<input type="password" required>
+		</label>
+	</div>
+
+	<div>
+		<label>
+			年齡
+			<input type="number" min="18" max="80">
+		</label>
+	</div>
+
+	<div>
+		<label>
+			電話
+			<input type="tel">
+		</label>
+	</div>
+
+	<div>
+		<label>
+			e-mail
+			<input type="email" required>
+		</label>
+	</div>
+
+	<div>
+		<label>
+			日期
+			<input type="date">
+		</label>
+	</div>
+
+	<div>
+		<label>
+			時間
+			<input type="time">
+		</label>
+	</div>
+
+	<div>
+		<label>
+			網址
+			<input type="url">
+		</label>
+	</div>
+
+	<div>
+		<label>
+			色彩
+			<input type="color">
+		</label>
+	</div>
+
+	<div>
+		<label>
+			搜尋
+			<input type="search">
+		</label>
+	</div>
+
+	<div>
+		<label>
+			檔案
+			<input type="file">
+		</label>
+	</div>
+
+	<div>
+		<label>
+			區間
+			<input type="range">
+		</label>
+	</div>
+
+	<div>
+		<input type="submit" value="送出">
+		<input type="reset">
+		<input type="button" value='按鈕'>
+		<button>button</button>
+	</div>
+
+	<div>
+		<select name="" id="" multiple>
+			<option value="">請選擇</option>
+			<option value="">台北市</option>
+			<option value="">新北市</option>
+			<option value="">基隆市</option>
+			<option value="">桃園市</option>
+		</select>
+	</div>
+
+	<div>
+		<textarea name="" id="" cols="20" rows="10"></textarea>
+	</div>
+
+	<div class="check">
+		<label>
+			<input type="checkbox">
+			登山
+		</label>
+		<label>
+			<input type="checkbox">
+			音樂
+		</label>
+		<label>
+			<input type="checkbox">
+			電玩
+		</label>
+	</div>
+
+</form>
+
+
+
+
+
+
+
+</body>
+</html>
