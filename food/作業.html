@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            display: flex;
+            flex-direction: row;
+            height: 400px;
+            width: 350px;
+            padding: 10px;
+            background-color: powderblue;
+            margin: 10px;
+            border: orangered solid 1px;
+        }
+        .pic{
+            height: 360px;
+            width: 50%;
+            padding: 10px;
+            margin: 10px;
+            border: orangered solid 1px;
+        }
+        .wrap{
+            background-color: peru;
+            border: orangered solid 1px;
+            padding: 10px;
+            align-self: center;
+            height: 300px;
+            font-size: 1px;
+            width: 500%;
+        }
+        p{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+
+        }
+        @media screen  and (min-width:1200px){
+            :nth-child(2)
+            {
+                flex-direction: row-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="pic">
+            <img src="https://picsum.photos/id/431/100/360">
+        </div>
+        <div class="wrap">
+            <h1>01</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            </p>
+        </div>
+    </div>
+    <div class="box c">
+        <div class="pic">
+            <img src="https://picsum.photos/id/431/100/300">
+        </div>
+        <div class="wrap">
+            <h1>01</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            </p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="https://picsum.photos/id/431/100/300">
+        </div>
+        <div class="wrap">
+            <h1>01</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            </p>
+        </div>
+    </div>
+</body>
+</html>

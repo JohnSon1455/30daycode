@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://kit.fontawesome.com/daab108b9f.js" crossorigin="anonymous"></script>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.wrap{
+			--web_size:1200px;
+			width: var(--web_size);
+			margin: auto;
+			border: red solid 1px;
+		}
+/* //////////////////////////////// */
+		.pen{
+			font-size: 35px;
+			padding: 20px;
+			position: fixed;
+			top: 2em;
+			right: 3vw;
+			background-color: #eee;
+			border-radius: 50%;
+			box-shadow: 6px 10px 20px rgba(87, 85, 85, 0.3);
+			z-index: 2;
+		}
+/* //////////////////////////////// */
+		.navbar{
+			width: var(--web_size);
+			display: flex;
+			background-color: rgb(102, 175, 84);
+			position: fixed;
+			border-bottom: solid 1px #aaa;
+			z-index: 1;
+		}
+		.navbar .home a img{
+			width: 135px;
+			display: block;
+			padding: 1rem 2rem 1rem 1rem;
+		}
+		.navbar .nav_item{
+			display: flex;
+			align-items: center;
+		}
+		.navbar .nav_item a{
+			text-decoration: none;
+			color: white;
+			font-size: 18px;
+			padding: 0 2rem;
+			display: flex;
+			flex-direction: column;
+
+		}
+		.navbar .nav_item a:hover::after{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 2px;
+			background-color: white;
+			margin-top: 5px;
+		}
+/* //////////////////////////////// */
+		.banner{
+			width: var(--web_size);
+			display: flex;
+			background-color: rgb(102, 175, 84);
+			padding-top: 13rem;
+			padding-bottom: 13rem;
+			justify-content: space-between;
+		}
+		.banner .banner_txt{
+			width: 35%;
+			padding-left: 1rem;
+			color: white;
+			display: flex;
+			flex-direction: column;
+		}
+		.banner .banner_txt h1{
+			font-size: 70px;
+			padding: 4rem 0 2rem 0;
+			position: relative;
+		}
+		.banner .banner_txt h1::before{
+			content: '100%';
+			color: black;
+			font-size: 20px;
+			background-color: yellow;
+			border-radius: 50%;
+			position: absolute;
+			top: 18%;
+			left: -2%;
+			padding: 1rem 0;
+			box-shadow: 6px 10px 20px rgba(87, 85, 85, 0.3);
+		}
+		.banner .banner_txt h3{
+			font-size: 20px;
+			order: -1;
+		}
+		.banner .banner_txt p{
+			font-size: 22px;
+		}
+		.banner .banner_txt .flow{
+			display: flex;
+			flex-grow: 1;
+			align-items: flex-end;
+			position: relative;
+		}
+		.banner .banner_txt .flow p{
+			padding-right: 3rem;
+			padding-bottom: 1.5rem;
+		}
+		.banner .banner_txt .flow::after{
+			content: '';
+			display: block;
+			width: 60%;
+			height: 2px;
+			background-color: white;
+			position: absolute;
+			bottom: 10%;
+		}
+		.banner img{
+			width: 42%;
+			margin: -2rem 4rem 0 0;
+		}
+/* //////////////////////////////// */
+		.about_us{
+			border: springgreen solid 2px;
+			width: var(--web_size);
+			display: flex;
+			justify-content: center;
+			padding-top: 6rem;
+		}
+		.about_us img{
+			width: 33%;
+		}
+		.about_us .name p{
+			padding: 0.6rem 2rem 0.5rem 1rem;
+			border: solid #ccc 3px;
+			font-size: 18px;
+			position: relative;
+			left: -50%;
+			top: 30%;
+		}
+		.about_us .name p::before{
+			content: '';
+			width: 0;
+			height: 0;
+			border-left: solid 12px white;
+			border-bottom: solid 12px transparent;
+			position: absolute;
+			bottom: -12px;
+			left: 13px;
+			z-index: 1;
+		}
+		.about_us .name p::after{
+			content: '';
+			width: 0;
+			height: 0;
+			border-left: solid 20px #ccc;
+			border-bottom: solid 20px transparent;
+			position: absolute;
+			bottom: -20px;
+			left: 10px;
+		}
+		.about_us .about_txt{
+			display: flex;
+			flex-direction: column;
+			width: 40%;
+			border: solid red 1px;
+		}
+		.about_us .about_txt h1{
+			padding-bottom: 10px;
+			word-spacing: 0.4em;
+		}
+		.about_us .about_txt h3{
+			margin-bottom: 20px;
+			color: #AAA;
+		}
+		.about_us .about_txt span{
+			color: #AAA;
+		}
+		.about_us .about_txt p{
+			margin-top:20px;
+			font-size: 20px;
+			display: flex;
+		}
+		.about_us .about_txt p::before{
+			border: springgreen solid 1px;
+			width: 10px;
+			height: 0px;
+			position: relative;
+			align-self: center;
+			content: "";
+			margin: 10px;
+		}
+		.about_us .about_txt a{
+			background-color: springgreen;
+			margin-bottom: 0px;
+			align-self: flex-end ;
+		}
+
+	</style>
+</head>
+<body>
+	<section class="wrap">
+		<p class="pen"><i class="fas fa-pencil-alt"></i></p>
+		<div class="navbar">
+			<div class="home">
+				<a href="#"><img src="pic/logo-inverse-269x100.png" alt="home_icon"></a>
+			</div>
+			<div class="nav_item">
+				<div><a href="#">Programs</a></div>
+				<div><a href="#">About</a></div>
+				<div><a href="#">Clients</a></div>
+			</div>
+		</div>
+		<div class="banner">
+			<div class="banner_txt">
+				<h1>DELICIOUS FOOD</h1>
+				<h3>BEST DISHES & INGREDIENTS</h3>
+				<p>Plate regularly updates the menus to make sure our customers eat the best and the tastiest food.</p>
+				<div class="flow">
+					<p>01</p>
+					<p>02</p>
+					<p>03</p>
+					<p>04</p>
+				</div>
+				<p class="organic">Organic Ingredients</p>
+			</div>
+			<img src="pic/slider-03-671x671.png" alt="">
+		</div>
+		<div class="about_us">
+			<img src="pic/home-01-455x685.png" alt="">
+			<div class="name">
+				<p>Julie Fox<br>Head Chef</p>
+			</div>
+			<div class="about_txt">
+				<h3>ABOUT US</h3>
+				<h1>HEALTHY FOOD <br>CAN BE DELICIOUS</h1>			
+				<span>Plate was established in 2013, as a reliable food service provider where anyone could order healthy food they like.</span>
+				<p>Choose gluten-free meals from our menu</p>
+				<p>The freshest ingredients for every dish</p>
+				<p>Get great discounts when ordering for 2+ people</p>
+				<div class="btn">
+					<a href="#">READ MORE</a>
+				</div>
+			</div>
+		</div>
+		<div class="offer">
+			<div class="offer_title">
+				<h3>WHAT WE OFFER</h3>
+				<h1>FOOD PACKAGES</h1>
+			</div>
+			<div class="meal">
+				<div class="detox">
+					<div>
+						<div class="detox_txt">
+							<h3>
+								DETOX
+								$15
+								PER DAY
+							</h3>
+						</div>
+						<div class="detox_pic"></div>
+					</div>
+					<p>The best choice if you are looking for tasty & light yet healthy food to start your day full of energy.</p>
+					<a href="#">ORDER NOW</a>
+					<a href="#">OPEN MENU (PDF)</a>
+				</div>
+				<div class="balanced">
+					<div>
+						<div class="balanced_txt">
+							<h3>
+								BALANCED
+								$30
+								PER DAY
+							</h3>
+						</div>
+						<div class="balanced_pic"></div>
+					</div>
+					<p>If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!</p>
+					<a href="#">ORDER NOW</a>
+					<a href="#">OPEN MENU (PDF)</a>
+				</div>
+				<div class="vegan">
+					<div>
+						<div class="vegan_txt">
+							<h3>
+								VEGAN
+								$22
+								PER DAY
+							</h3>
+						</div>
+						<div class="vegan_pic"></div>
+					</div>
+					<p>Special menu developed for our vegan clients who appreciate healthy and plant-based food.</p>
+					<a href="#">ORDER NOW</a>
+					<a href="#">OPEN MENU (PDF)</a>
+				</div>
+			</div>
+		</div>
+		<div class="work">
+			<div class="work_title">
+				<h3>HOW IT WORKS</h3>
+				<h1>3 STEPS TO HEALTHY EATING</h1>
+			</div>
+			<div class="work_content">
+				<div>
+					<h3>CHOOSE A FOOD PACKAGE</h3>
+					<p>First, select the package that you prefer the most.</p>
+				</div>
+				<div>
+					<h3>CUSTOMIZE YOUR MENU</h3>
+					<p>After that, feel free to change and customize your menu.</p>
+				</div>
+				<div>
+					<h3>SELECT A DELIVERY ADDRESS & TIME</h3>
+					<p>Finally, let us know where and when to deliver your food.</p>
+				</div>
+			</div>
+		</div>
+		<div class="value">
+			<div class="value_txt">
+				<div>
+					<h3>QUALITY</h3>
+					<p>We work with the best suppliers to make sure you get the top-quality dishes, beverages, and service.</p>
+				</div>
+				<div>
+					<h3>ORGANIC</h3>
+					<p>All ingredients we use are 100% organic and fresh. Such approach makes our food a lot healthier.</p>
+				</div>
+				<div>
+					<h3>TASTY</h3>
+					<p>Great and unforgettable taste of our dishes is what attracts more and more clients to Plate.</p>
+				</div>
+				<div>
+					<h3>DIVERSE</h3>
+					<p>Our team regularly updates the menus to provide you with better food diversity whenever you order.</p>
+				</div>
+			</div>
+		</div>
+		<div class="client">
+			<div class="client_pic">
+
+			</div>
+			<div class="client_txt">
+				<h3>WHAT OUR CLIENTS SAY</h3>
+				<h1>TESTIMONIALS</h1>
+				<p>I have tried a lot of food delivery services but Plate is something out of this world! Their food is really healthy and it tastes great, which is why I recommend this company to all my friends!</p>
+				<p>SOPHIE SMITH</p>
+				<a href="">SEND YOUR REVIEW</a>
+			</div>
+		</div>
+		<div class="footer">
+			<div></div>
+			<div>
+				<p>CONTACTS</p>
+				<p>Ph.</p><a href="#">1-800-123-1234</a>
+				<p>Mail.</p><a href="#">Info@demolink.org</a>
+				<a href=""></a>
+			</div>
+			<div>
+
+			</div>
+			<div></div>
+			<div class="icon"></div>
+		</div>
+
+	</section>
+</body>
+</html>

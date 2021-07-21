@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            --自訂:20px;
+            max-width: 1200px;
+            margin: auto;
+            padding-left: var(--自訂);
+            padding-right: var(--自訂);
+            /* display: flex;
+            flex-wrap: wrap; */
+        }
+        .row{
+            margin-left: var(--自訂);
+            margin-right: var(--自訂);
+            display: flex;
+            flex-wrap: wrap;
+        }
+        [class*="col-"]{
+            padding-left: var(--自訂);
+            padding-right: var(--自訂);
+            box-sizing: border-box;
+        }
+        .col-1{ width: 8.333333%; }
+        .col-2 {width: 16.666666%; }
+        .col-3 {width: 25%;}
+        .col-4{ width: 33.3333333%; }
+        .col-5{ width: 41.666666%; }
+        .col-6{ width: 50%; }
+        .col-7{ width: 66.66666666%; }
+        .col-8{ width: 75%;}
+        .col-9{ width: 66.66666;}
+        .col-10{ width: 83.3333333%;}
+        .col-11 {width: 91.6666666%;}
+        .col-12{ width: 100%;}
+        @media screen  and (min-width: 768px){
+            .col-md-1{ width: 8.333333%; }
+            .col-md-2 {width: 16.666666%; }
+            .col-md-3 {width: 25%;}
+            .col-md-4{ width: 33.3333333%; }
+            .col-md-5{ width: 41.666666%; }
+            .col-md-6{ width: 50%; }
+            .col-md-7{ width: 66.66666666%; }
+            .col-md-8{ width: 75%;}
+            .col-md-9{ width: 66.66666;}
+            .col-md-10{ width: 83.3333333%;}
+            .col-md-11 {width: 91.6666666%;}
+            .col-md-12{ width: 100%;}
+        }
+        .item{
+            background-color: #ccc;
+            padding: 20px;
+            font-size: 10px;
+            border: 2px solid #fff;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md-6">
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit  Qui at praesentium in iste ducimus animi! Quaerat eum repudiandae repellat ad magnam, commodi id reprehenderit explicabo  Praesentium perspiciatis in fugiat amet?</p>
+                </div>
+            </div>
+            <div class="col-3 col-md-6">
+                         <div class="item">
+                    <p>Lorem ipsum dolor sit amet consectetur repudiandae repellat ad magnam, commodi id reprehenderit explicabo. Praesentium perspiciatis in fugiat amet?</p>
+                </div>
+            </div>
+            <div class="col-3 col-md-6">
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at praesentium in iste ducimus animi! Quaerat eum repudiandae repellat ad magnam, commodi id reprehenderit explicabo. Praesentium perspiciatis in fugiat amet?</p>
+                </div>
+            </div>
+            <div class="col-3 col-md-6">
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at praesentium in iste ducimus animi! Quaerat eum repudiandae repellat ad magnam, commodi id reprehenderit explicabo. Praesentium perspiciatis in fugiat amet?</p>
+                </div>
+            </div>
+            <div class="col-3 col-md-6">
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at praesentium in iste ducimus animi! Quaerat eum repudiandae repellat ad magnam, commodi id reprehenderit explicabo. Praesentium perspiciatis in fugiat amet?</p>
+                </div>
+            </div>
+            <div class="col-3 col-md-6">
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at praesentium in iste ducimus animi! Quaerat eum repudiandae repellat ad magnam, commodi id reprehenderit explicabo. Praesentium perspiciatis in fugiat amet?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
