@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+    <script>
+        document.addEventListener("DOMContentLoaded",() =>{
+    const btn = document.querySelector("#start-btn")
+    const time = document.querySelector("#timer")
+    btn.addEventListener("click",() =>{
+        setInterval(() => {
+            time.innerHTML++
+        }, 1000);
+    })
+})
+    </script>
+  <style>
+    #timer{
+        font-size: 60px;
+    }
+</style>
+</head>
+<body>
+    <div id="timer">0</div>
+    <button id="start-btn">開始</button>
+</body>
+</html>
