@@ -1,0 +1,172 @@
+nav{
+    background-color: #ffffff;
+    height: 140px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    border: 2px slateblue solid;
+}
+nav>a{
+    /* border: red solid 2px; */
+    align-self: center;
+    font-size: 32px;
+    padding: 28px;
+    position: relative;
+    margin: 10px;
+    color: #000;
+    text-decoration: none ;
+}
+nav a:hover{
+    color: red;
+    transition: 0.5s ease;
+}
+nav a::before{
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: 0;
+    content: "";
+    position: absolute;
+    border: red 2px solid;
+    width: 0px;
+}
+nav>p{
+    flex-grow: 1;
+}
+.header{
+    background-image:url("https://picsum.photos/id/670/500/400");
+    clip-path: polygon(100% 0%, 100% 75%, 46% 100%, 0 80%, 0 0);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    color: #fff;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+}
+.header-center{
+    flex-direction: row-reverse;
+    border: solid 2px red;
+    width: 1000px;
+    height: 450px;
+}
+.header-text{
+    -webkit-text-stroke: 1px black;
+    border: solid 2px red;
+    height: 100%;
+}
+.header-text>span{  
+    font-size: 100px;
+}
+.btn{
+    height: 100%;
+}
+.btn a{
+    /* align-self: flex-end; */
+    width: 140px;
+    font-size: 32px;
+    text-decoration: none ;
+    color: #fff;
+    background-color:red;
+    padding: 30px;
+    transition: 0.4s ease;
+    border-radius: 10px;
+}
+.btn a:hover{
+    background-color: #a00;
+}
+.slogan{
+    border: red solid 2px;
+    text-align: center;
+    font-size: 24px;
+    margin: 40px;
+}
+.slogan h2{
+    margin-bottom: 30px;
+    position: relative;
+}
+.slogan h2::after{
+    position: absolute;
+    content: "";
+    bottom: -10px;           
+    left: 0;        
+    right: 0;
+    margin: auto;   
+    width: 60px;
+    border: red solid 1px;
+}
+.item{
+    box-sizing: border-box;
+    text-align: center;
+}
+.teacher{
+    background-color: #EEE;
+    clip-path: polygon(100% 10%, 100% 100%, 0 100%, 0 5%, 60% 0);
+    justify-content: center;
+    padding-top:200px ;
+    border: solid red 2px;
+}
+.teacher .item{
+    box-sizing: border-box;
+    text-align: center;
+}
+.teacher .Lee{
+    margin: 10px;
+    border: solid red 2px;
+}
+.media h2 {
+    font-size: 50px;
+    text-align: center;
+}
+.media-btn{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 60px;
+}
+
+.service ::after{
+    position: absolute;
+    content: "";
+    bottom: -10px;           
+    left: 0;        
+    right: 0;
+    margin: auto;   
+    width: 60px;
+    border: red solid 1px;
+}
+.service{
+    padding-top: 300px;
+    background-color: rgb(120, 59, 194);
+    clip-path: polygon(100% 19%, 100% 100%, 0 100%, 0 20%, 50% 0);
+}
+.service .content{
+    background-color: rgb(216, 72, 36);
+    clip-path:polygon(0 15%, 84% 0%, 100% 25%, 100% 82%, 28% 100%, 0 83%);
+    z-index: 1;
+    width: 550px;
+    height: 500px;
+    margin-left:30px ;
+    color: #000;
+    border: solid red 2px;
+}
+.course {
+    background-color: rgb(120, 59, 194);
+    clip-path: polygon(100% 0, 100% 82%, 49% 100%, 0 83%, 0 0);
+    padding-top: 100px;
+    padding-bottom: 600px;
+    text-align: center;
+}
+.course h2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: left;
+}
+.course .teach{
+    margin: 50px;
+}
