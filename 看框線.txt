@@ -1,0 +1,2 @@
+*{ outline soild red 1px
+}
