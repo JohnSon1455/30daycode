@@ -1,0 +1,4 @@
+desc "foo印bar"
+task :foo do 
+  puts "bar"
+end
